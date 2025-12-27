@@ -1,0 +1,34 @@
+# Funding Configuration for GitHub Sponsors
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/displaying-a-sponsor-button-in-your-repository
+
+# GitHub Sponsors
+github: [Lizzy0981]
+
+# Patreon
+# patreon: your_patreon_username
+
+# Open Collective
+# open_collective: your_opencollective_username
+
+# Ko-fi
+# ko_fi: your_kofi_username
+
+# Tidelift
+# tidelift: pypi/package-name
+
+# Community Bridge
+# community_bridge: project-name
+
+# Liberapay
+# liberapay: your_liberapay_username
+
+# IssueHunt
+# issuehunt: your_issuehunt_username
+
+# Buy Me a Coffee
+# custom: ['https://www.buymeacoffee.com/your_username']
+
+# Custom URLs (max 4)
+custom:
+  - 'https://github.com/Lizzy0981'
+  - 'https://linkedin.com/in/eli-familia/'
