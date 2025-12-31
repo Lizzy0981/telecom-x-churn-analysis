@@ -1,0 +1,157 @@
+{
+  "app": {
+    "name": "Telecom X - Customer Churn Analysis",
+    "version": "1.0.0",
+    "environment": "production",
+    "debug": false,
+    "timezone": "UTC",
+    "default_language": "en"
+  },
+  "data": {
+    "source_path": "data/raw/",
+    "processed_path": "data/processed/",
+    "cache_path": "data/cache/",
+    "exports_path": "data/exports/",
+    "max_file_size_mb": 100,
+    "allowed_formats": [
+      "csv",
+      "xlsx",
+      "json",
+      "parquet"
+    ],
+    "date_format": "%Y-%m-%d",
+    "datetime_format": "%Y-%m-%d %H:%M:%S"
+  },
+  "etl": {
+    "batch_size": 1000,
+    "max_workers": 4,
+    "timeout_seconds": 300,
+    "retry_attempts": 3,
+    "cache_enabled": true,
+    "validation_enabled": true,
+    "mock_data_records": 500
+  },
+  "analysis": {
+    "churn_threshold": 0.25,
+    "risk_score_high": 70,
+    "risk_score_medium": 40,
+    "tenure_bins": [
+      0,
+      12,
+      24,
+      36,
+      48,
+      60,
+      72
+    ],
+    "charges_bins": [
+      0,
+      30,
+      50,
+      70,
+      90,
+      110
+    ],
+    "correlation_threshold": 0.7,
+    "outlier_method": "isolation_forest",
+    "clustering_method": "kmeans",
+    "n_clusters": 4
+  },
+  "ml": {
+    "test_size": 0.2,
+    "random_state": 42,
+    "cv_folds": 5,
+    "scoring_metric": "accuracy",
+    "models": {
+      "random_forest": {
+        "n_estimators": 100,
+        "max_depth": 10,
+        "min_samples_split": 5
+      },
+      "xgboost": {
+        "n_estimators": 100,
+        "learning_rate": 0.1,
+        "max_depth": 5
+      },
+      "logistic_regression": {
+        "max_iter": 1000,
+        "C": 1.0
+      }
+    }
+  },
+  "visualization": {
+    "default_theme": "plotly_white",
+    "color_palette": "corporate",
+    "figure_size": [
+      12,
+      8
+    ],
+    "dpi": 300,
+    "export_format": "png",
+    "interactive_backend": "plotly",
+    "static_backend": "matplotlib"
+  },
+  "reports": {
+    "pdf_engine": "reportlab",
+    "excel_engine": "openpyxl",
+    "page_size": "letter",
+    "orientation": "portrait",
+    "margin_inches": 0.5,
+    "font_family": "Helvetica",
+    "font_size": 11,
+    "include_header": true,
+    "include_footer": true,
+    "logo_path": "assets/logo.png"
+  },
+  "api": {
+    "host": "0.0.0.0",
+    "port": 8000,
+    "reload": false,
+    "workers": 4,
+    "timeout": 60,
+    "cors_origins": [
+      "*"
+    ],
+    "rate_limit": "100/minute",
+    "api_version": "v1"
+  },
+  "security": {
+    "encryption_enabled": true,
+    "encryption_algorithm": "AES-256",
+    "password_min_length": 8,
+    "session_timeout_minutes": 30,
+    "max_login_attempts": 5,
+    "jwt_secret_key": "change-this-in-production",
+    "jwt_algorithm": "HS256",
+    "jwt_expiration_hours": 24
+  },
+  "notifications": {
+    "enabled": true,
+    "email_enabled": true,
+    "sms_enabled": false,
+    "slack_enabled": false,
+    "alert_threshold_churn": 0.3,
+    "alert_threshold_risk": 0.4,
+    "daily_report_time": "08:00",
+    "weekly_report_day": "Monday"
+  },
+  "performance": {
+    "cache_ttl_seconds": 3600,
+    "db_pool_size": 10,
+    "db_max_overflow": 20,
+    "query_timeout_seconds": 30,
+    "enable_profiling": false,
+    "log_slow_queries": true,
+    "slow_query_threshold_ms": 1000
+  },
+  "features": {
+    "enable_ml_predictions": true,
+    "enable_forecasting": true,
+    "enable_clustering": true,
+    "enable_anomaly_detection": true,
+    "enable_real_time_monitoring": false,
+    "enable_auto_reports": true,
+    "enable_api": true,
+    "enable_web_dashboard": true
+  }
+}

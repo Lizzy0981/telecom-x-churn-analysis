@@ -1,0 +1,44 @@
+{
+  "_comment": "DO NOT COMMIT THIS FILE - Add to .gitignore",
+  "openai": {
+    "api_key": "",
+    "organization": "",
+    "model": "gpt-4"
+  },
+  "anthropic": {
+    "api_key": "",
+    "model": "claude-3-sonnet-20240229"
+  },
+  "google": {
+    "api_key": "",
+    "project_id": "",
+    "service_account": ""
+  },
+  "aws": {
+    "access_key_id": "",
+    "secret_access_key": "",
+    "region": "us-east-1"
+  },
+  "azure": {
+    "subscription_id": "",
+    "client_id": "",
+    "client_secret": "",
+    "tenant_id": ""
+  },
+  "twilio": {
+    "account_sid": "",
+    "auth_token": "",
+    "phone_number": ""
+  },
+  "sendgrid": {
+    "api_key": "",
+    "from_email": ""
+  },
+  "database": {
+    "host": "localhost",
+    "port": 5432,
+    "username": "",
+    "password": "",
+    "database": "telecom_x"
+  }
+}
