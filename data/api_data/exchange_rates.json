@@ -1,0 +1,21 @@
+{
+  "base": "USD",
+  "date": "2025-01-15",
+  "timestamp": 1736899200,
+  "rates": {
+    "EUR": 0.92,
+    "GBP": 0.79,
+    "JPY": 149.85,
+    "CAD": 1.36,
+    "AUD": 1.52,
+    "CNY": 7.24,
+    "MXN": 17.05,
+    "BRL": 5.12,
+    "INR": 83.15,
+    "RUB": 88.5,
+    "KRW": 1320.45,
+    "DOP": 58.75
+  },
+  "source": "ExchangeRate-API",
+  "disclaimer": "Simulated data for demo purposes"
+}

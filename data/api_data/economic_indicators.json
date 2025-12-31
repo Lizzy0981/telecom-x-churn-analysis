@@ -1,0 +1,50 @@
+{
+  "country": "USA",
+  "source": "World Bank API",
+  "date": "2025-01-15",
+  "indicators": [
+    {
+      "name": "GDP (current US$)",
+      "code": "NY.GDP.MKTP.CD",
+      "value": 27360935000000,
+      "year": 2024,
+      "unit": "USD"
+    },
+    {
+      "name": "GDP growth (annual %)",
+      "code": "NY.GDP.MKTP.KD.ZG",
+      "value": 2.5,
+      "year": 2024,
+      "unit": "percentage"
+    },
+    {
+      "name": "Inflation rate",
+      "code": "FP.CPI.TOTL.ZG",
+      "value": 3.2,
+      "year": 2024,
+      "unit": "percentage"
+    },
+    {
+      "name": "Unemployment rate",
+      "code": "SL.UEM.TOTL.ZS",
+      "value": 3.8,
+      "year": 2024,
+      "unit": "percentage"
+    },
+    {
+      "name": "Internet users (% of population)",
+      "code": "IT.NET.USER.ZS",
+      "value": 91.5,
+      "year": 2024,
+      "unit": "percentage"
+    },
+    {
+      "name": "Mobile subscriptions (per 100 people)",
+      "code": "IT.CEL.SETS.P2",
+      "value": 127.3,
+      "year": 2024,
+      "unit": "per 100 people"
+    }
+  ],
+  "disclaimer": "Simulated data for demo purposes"
+}

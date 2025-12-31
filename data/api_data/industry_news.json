@@ -1,0 +1,70 @@
+{
+  "status": "ok",
+  "totalResults": 10,
+  "query": "telecommunications",
+  "language": "en",
+  "articles": [
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Sarah Johnson",
+      "title": "5G Networks Reach 60% Coverage in Urban Areas",
+      "description": "Major telecom operators announce significant expansion of 5G infrastructure across major cities.",
+      "url": "https://example.com/5g-expansion",
+      "publishedAt": "2025-01-14T09:30:00Z",
+      "category": "technology"
+    },
+    {
+      "source": {
+        "id": "reuters",
+        "name": "Reuters"
+      },
+      "author": "Michael Chen",
+      "title": "Telecom Industry Sees 12% Growth in Fiber Optic Subscriptions",
+      "description": "Industry report shows strong demand for high-speed internet services.",
+      "url": "https://example.com/fiber-growth",
+      "publishedAt": "2025-01-13T15:45:00Z",
+      "category": "business"
+    },
+    {
+      "source": {
+        "id": "wired",
+        "name": "WIRED"
+      },
+      "author": "Emma Rodriguez",
+      "title": "AI-Powered Customer Service Reduces Churn by 23%",
+      "description": "New study reveals impact of artificial intelligence on customer retention.",
+      "url": "https://example.com/ai-churn",
+      "publishedAt": "2025-01-12T11:20:00Z",
+      "category": "technology"
+    },
+    {
+      "source": {
+        "id": "bloomberg",
+        "name": "Bloomberg"
+      },
+      "author": "David Kim",
+      "title": "Telecom Mergers Expected to Reshape Industry in 2025",
+      "description": "Analysts predict major consolidation among mid-tier carriers.",
+      "url": "https://example.com/telecom-mergers",
+      "publishedAt": "2025-01-11T08:00:00Z",
+      "category": "business"
+    },
+    {
+      "source": {
+        "id": "theverge",
+        "name": "The Verge"
+      },
+      "author": "Lisa Wang",
+      "title": "IoT Connectivity Drives New Revenue Streams for Carriers",
+      "description": "Internet of Things devices create opportunities for telecom providers.",
+      "url": "https://example.com/iot-revenue",
+      "publishedAt": "2025-01-10T14:30:00Z",
+      "category": "technology"
+    }
+  ],
+  "source": "NewsAPI",
+  "disclaimer": "Simulated data for demo purposes"
+}
