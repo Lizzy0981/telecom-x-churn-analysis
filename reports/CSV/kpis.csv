@@ -1,0 +1,11 @@
+KPI,Value,Unit,Status
+Total Customers,500.0,customers,Normal
+Churn Rate,46.6,%,High
+Retention Rate,53.4,%,Good
+Average Monthly Charges,64.14,USD,Normal
+Average Tenure (months),37.24,months,Normal
+Average Total Charges,2413.49,USD,Normal
+High Risk Customers,19.0,customers,Normal
+Premium Customers,76.0,customers,Good
+Month-to-Month Contracts,292.0,customers,Alert
+Average Services per Customer,2.85,services,Normal

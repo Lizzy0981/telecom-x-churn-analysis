@@ -1,0 +1,19 @@
+Metric,Value,Category
+Total Customers,500.0,Count
+Churned Customers,233.0,Count
+Active Customers,267.0,Count
+Avg Monthly Charges,64.14,Monthly Charges
+Median Monthly Charges,63.51,Monthly Charges
+Std Monthly Charges,19.84,Monthly Charges
+Min Monthly Charges,30.03,Monthly Charges
+Max Monthly Charges,99.72,Monthly Charges
+Avg Tenure,37.24,Tenure
+Median Tenure,38.0,Tenure
+Avg Total Charges,2413.49,Total Charges
+Median Total Charges,2158.68,Total Charges
+Avg Services,2.85,Services
+Avg Risk Score,36.59,Risk
+Senior Citizens,74.0,Demographics
+Non-Senior Citizens,426.0,Demographics
+Male Customers,247.0,Demographics
+Female Customers,253.0,Demographics

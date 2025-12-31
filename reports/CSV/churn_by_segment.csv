@@ -1,0 +1,10 @@
+Segment_Type,Segment_Name,Total_Customers,Churned,Active,Churn_Rate,Avg_Monthly_Charges,Avg_Tenure
+Contract,One year,112,44,68,39.29,64.24,35.49
+Contract,Month-to-month,292,180,112,61.64,63.78,36.92
+Contract,Two year,96,9,87,9.38,65.11,40.27
+Customer Segment,Standard,383,180,203,47.0,61.23,33.49
+Customer Segment,Premium,76,36,40,47.37,84.17,61.8
+Customer Segment,Power User,29,11,18,37.93,62.15,35.45
+Customer Segment,Entry,12,6,6,50.0,34.7,5.75
+Age Group,Non-Senior,426,196,230,46.01,64.18,37.47
+Age Group,Senior,74,37,37,50.0,63.89,35.96
