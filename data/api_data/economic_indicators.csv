@@ -1,0 +1,7 @@
+name,code,value,year,unit
+GDP (current US$),NY.GDP.MKTP.CD,27360935000000.0,2024,USD
+GDP growth (annual %),NY.GDP.MKTP.KD.ZG,2.5,2024,percentage
+Inflation rate,FP.CPI.TOTL.ZG,3.2,2024,percentage
+Unemployment rate,SL.UEM.TOTL.ZS,3.8,2024,percentage
+Internet users (% of population),IT.NET.USER.ZS,91.5,2024,percentage
+Mobile subscriptions (per 100 people),IT.CEL.SETS.P2,127.3,2024,per 100 people

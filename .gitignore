@@ -1,0 +1,252 @@
+# ============================================================================
+# TELECOM X - CUSTOMER CHURN ANALYSIS
+# .gitignore - Files and directories to ignore in Git
+# ============================================================================
+
+# ============================================================================
+# PYTHON
+# ============================================================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# ============================================================================
+# JUPYTER NOTEBOOKS
+# ============================================================================
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+*.ipynb_checkpoints/
+
+# Jupyter Notebook config
+.jupyter/
+
+# ============================================================================
+# IDE & EDITORS
+# ============================================================================
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+.idea_modules/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ============================================================================
+# OPERATING SYSTEM
+# ============================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ============================================================================
+# PROJECT SPECIFIC
+# ============================================================================
+# Data files
+data/raw/*.csv
+data/raw/*.xlsx
+data/raw/*.xls
+data/raw/*.json
+data/raw/*.parquet
+data/processed/*.csv
+data/processed/*.xlsx
+data/processed/*.parquet
+data/api_data/*.json
+data/cache/*.pkl
+data/temp/*
+
+# Keep directory structure but ignore content
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/api_data/.gitkeep
+!data/cache/.gitkeep
+
+# Reports (generated files)
+reports/csv/*.csv
+reports/excel/*.xlsx
+reports/pdf/*.pdf
+reports/temp/*
+
+# Visualizations (generated)
+visualizations/plots/*.png
+visualizations/plots/*.jpg
+visualizations/plots/*.svg
+visualizations/interactive/*.html
+visualizations/temp/*
+
+# Logs
+logs/
+*.log
+log.txt
+
+# ============================================================================
+# CONFIGURATION & SECRETS
+# ============================================================================
+# API Keys and secrets
+config/api_keys.json
+config/.env
+.env
+.env.local
+.env.*.local
+secrets.json
+credentials.json
+
+# Personal configuration (keep templates)
+config/settings.json
+!config/settings.template.json
+
+# ============================================================================
+# DATABASES
+# ============================================================================
+*.db
+*.sqlite
+*.sqlite3
+
+# ============================================================================
+# TEMPORARY FILES
+# ============================================================================
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+temp/
+tmp/
+.temp/
+
+# ============================================================================
+# DOCUMENTATION
+# ============================================================================
+# Sphinx documentation
+docs/_build/
+docs/_static/
+docs/_templates/
+
+# ============================================================================
+# DEPLOYMENT
+# ============================================================================
+# Docker
+.dockerignore
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+
+# ============================================================================
+# MISC
+# ============================================================================
+# Backup files
+*.backup
+*backup*
+
+# Compressed files
+*.zip
+*.tar.gz
+*.rar
+
+# Large files (should use Git LFS)
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+
+# Node modules (if using any JS tools)
+node_modules/
+package-lock.json
+
+# ============================================================================
+# KEEP THESE FILES
+# ============================================================================
+# Force include important files
+!requirements.txt
+!setup.py
+!README.md
+!LICENSE
+!.gitignore
+
+# Keep example/template files
+!config/*.template.json
+!data/*/.gitkeep
+!reports/*/.gitkeep
+!visualizations/*/.gitkeep
+
+# ============================================================================

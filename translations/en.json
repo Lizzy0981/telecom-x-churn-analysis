@@ -1,0 +1,137 @@
+{
+  "app": {
+    "title": "Telecom X - Churn Analysis",
+    "subtitle": "Predictive Intelligence Platform",
+    "version": "1.0.0",
+    "author": "Elizabeth Díaz Familia"
+  },
+  "navigation": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "analysis": "Analysis",
+    "reports": "Reports",
+    "settings": "Settings",
+    "help": "Help"
+  },
+  "dashboard": {
+    "title": "Executive Dashboard",
+    "churn_rate": "Churn Rate",
+    "retention_rate": "Retention Rate",
+    "total_customers": "Total Customers",
+    "revenue": "Monthly Revenue",
+    "high_risk": "High Risk Customers",
+    "active_customers": "Active Customers",
+    "churned_customers": "Churned Customers"
+  },
+  "analysis": {
+    "title": "Detailed Analysis",
+    "by_contract": "By Contract Type",
+    "by_segment": "By Segment",
+    "by_tenure": "By Tenure",
+    "by_charges": "By Charges",
+    "correlation": "Correlation Matrix",
+    "trends": "Trends"
+  },
+  "reports": {
+    "title": "Report Generation",
+    "generate": "Generate Report",
+    "executive": "Executive Report",
+    "technical": "Technical Report",
+    "export_pdf": "Export to PDF",
+    "export_excel": "Export to Excel",
+    "export_csv": "Export to CSV"
+  },
+  "kpis": {
+    "total_customers": "Total Customers",
+    "churn_rate": "Churn Rate",
+    "retention_rate": "Retention Rate",
+    "avg_monthly_charges": "Average Monthly Charges",
+    "avg_tenure": "Average Tenure",
+    "avg_total_charges": "Average Total Charges",
+    "high_risk_customers": "High Risk Customers",
+    "premium_customers": "Premium Customers",
+    "month_to_month_contracts": "Month-to-Month Contracts",
+    "avg_services": "Average Services per Customer"
+  },
+  "charts": {
+    "churn_distribution": "Churn Distribution",
+    "churn_by_contract": "Churn by Contract",
+    "revenue_analysis": "Revenue Analysis",
+    "tenure_distribution": "Tenure Distribution",
+    "correlation_matrix": "Correlation Matrix",
+    "risk_score": "Risk Score"
+  },
+  "actions": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "export": "Export",
+    "import": "Import",
+    "refresh": "Refresh",
+    "search": "Search",
+    "filter": "Filter",
+    "download": "Download"
+  },
+  "messages": {
+    "success": "Operation successful",
+    "error": "Operation error",
+    "warning": "Warning",
+    "info": "Information",
+    "loading": "Loading...",
+    "no_data": "No data available",
+    "confirm_delete": "Are you sure you want to delete?",
+    "save_success": "Saved successfully",
+    "save_error": "Save error"
+  },
+  "customer": {
+    "id": "Customer ID",
+    "name": "Name",
+    "gender": "Gender",
+    "senior_citizen": "Senior Citizen",
+    "tenure": "Tenure (months)",
+    "monthly_charges": "Monthly Charges",
+    "total_charges": "Total Charges",
+    "contract": "Contract Type",
+    "churn": "Churn",
+    "risk_score": "Risk Score",
+    "segment": "Segment"
+  },
+  "segments": {
+    "entry": "Entry",
+    "standard": "Standard",
+    "premium": "Premium",
+    "power_user": "Power User"
+  },
+  "contracts": {
+    "month_to_month": "Month-to-Month",
+    "one_year": "One Year",
+    "two_year": "Two Year"
+  },
+  "status": {
+    "active": "Active",
+    "churned": "Churned",
+    "high_risk": "High Risk",
+    "low_risk": "Low Risk",
+    "normal": "Normal"
+  },
+  "time": {
+    "months": "months",
+    "years": "years",
+    "days": "days",
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "last_week": "Last Week",
+    "last_month": "Last Month",
+    "last_year": "Last Year"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "theme": "Theme",
+    "notifications": "Notifications",
+    "api_keys": "API Keys",
+    "data_refresh": "Data Refresh",
+    "export_format": "Export Format"
+  }
+}

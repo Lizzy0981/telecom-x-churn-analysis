@@ -1,0 +1,21 @@
+"""
+📝 Logger
+========
+
+Autor: Elizabeth Díaz Familia
+"""
+
+import logging
+from pathlib import Path
+
+def setup_logger(name: str, log_file: str = 'app.log'):
+    """Configurar logger"""
+    logger = logging.getLogger(name)
+    logger.setLevel(logging.INFO)
+    
+    handler = logging.FileHandler(log_file)
+    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    handler.setFormatter(formatter)
+    logger.addHandler(handler)
+    
+    return logger

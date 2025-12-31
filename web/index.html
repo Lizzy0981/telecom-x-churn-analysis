@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telecom X - Customer Churn Analysis | AI-Powered Intelligence Platform</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#667eea">
+    <meta name="description" content="Plataforma de Inteligencia Artificial para análisis predictivo de churn en telecomunicaciones">
+    <meta name="keywords" content="telecom, churn analysis, AI, machine learning, customer retention, predictive analytics">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+    
+    <!-- External Libraries -->
+    <script src="https://cdn.plot.ly/plotly-2.26.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Quantum Particles Background -->
+    <div class="quantum-particles" id="quantumParticles"></div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header with Language Selector -->
+        <header class="header">
+            <div class="header-content">
+                <div class="header-main">
+                    <h1 data-translate="app.title">Telecom X - Customer Churn Analysis</h1>
+                    <p class="subtitle" data-translate="app.subtitle">Predictive Intelligence Platform</p>
+                    <div class="ai-status">
+                        <div class="quantum-indicator"></div>
+                        <span data-translate="status.ai_active">AI System Active</span>
+                    </div>
+                </div>
+                
+                <!-- Language Selector -->
+                <div class="language-selector">
+                    <button class="language-btn" id="languageBtn">
+                        <span class="flag" id="currentFlag">🇺🇸</span>
+                        <span class="lang-text" id="currentLang">EN</span>
+                        <span class="arrow">▼</span>
+                    </button>
+                    <div class="language-dropdown" id="languageDropdown">
+                        <button class="language-option" data-lang="es">
+                            <span class="flag">🇪🇸</span>
+                            <span>Español</span>
+                        </button>
+                        <button class="language-option active" data-lang="en">
+                            <span class="flag">🇺🇸</span>
+                            <span>English</span>
+                        </button>
+                        <button class="language-option" data-lang="pt">
+                            <span class="flag">🇧🇷</span>
+                            <span>Português</span>
+                        </button>
+                        <button class="language-option" data-lang="fr">
+                            <span class="flag">🇫🇷</span>
+                            <span>Français</span>
+                        </button>
+                        <button class="language-option" data-lang="ar">
+                            <span class="flag">🇸🇦</span>
+                            <span>العربية</span>
+                        </button>
+                        <button class="language-option" data-lang="he">
+                            <span class="flag">🇮🇱</span>
+                            <span>עברית</span>
+                        </button>
+                        <button class="language-option" data-lang="zh">
+                            <span class="flag">🇨🇳</span>
+                            <span>中文</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Quick Actions Panel -->
+        <section class="quick-actions">
+            <button class="action-btn" onclick="window.location.href='dashboards/executive.html'">
+                <span class="action-icon">👔</span>
+                <span class="action-text" data-translate="navigation.executive">Executive Dashboard</span>
+            </button>
+            <button class="action-btn" onclick="window.location.href='dashboards/technical.html'">
+                <span class="action-icon">🔬</span>
+                <span class="action-text" data-translate="navigation.technical">Technical Dashboard</span>
+            </button>
+            <button class="action-btn" onclick="app.showAnalytics()">
+                <span class="action-icon">📊</span>
+                <span class="action-text" data-translate="navigation.analytics">Analytics</span>
+            </button>
+            <button class="action-btn" onclick="app.showReports()">
+                <span class="action-icon">📄</span>
+                <span class="action-text" data-translate="navigation.reports">Reports</span>
+            </button>
+        </section>
+
+        <!-- KPIs Dashboard -->
+        <section class="kpis-container">
+            <div class="kpi-card">
+                <div class="kpi-icon">👥</div>
+                <div class="kpi-content">
+                    <h3 data-translate="kpis.total_customers">Total Customers</h3>
+                    <div class="kpi-value" id="totalCustomers">0</div>
+                    <div class="kpi-trend positive">↗ +5.2%</div>
+                </div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-icon">📉</div>
+                <div class="kpi-content">
+                    <h3 data-translate="kpis.churn_rate">Churn Rate</h3>
+                    <div class="kpi-value" id="churnRate">0%</div>
+                    <div class="kpi-trend negative">↗ +1.2%</div>
+                </div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-icon">✅</div>
+                <div class="kpi-content">
+                    <h3 data-translate="kpis.retention_rate">Retention Rate</h3>
+                    <div class="kpi-value" id="retentionRate">0%</div>
+                    <div class="kpi-trend positive">↗ +2.5%</div>
+                </div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-icon">💰</div>
+                <div class="kpi-content">
+                    <h3 data-translate="kpis.avg_monthly_charges">Avg Monthly Charges</h3>
+                    <div class="kpi-value" id="avgCharges">$0</div>
+                    <div class="kpi-trend positive">↗ +3.8%</div>
+                </div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-icon">⚠️</div>
+                <div class="kpi-content">
+                    <h3 data-translate="kpis.high_risk_customers">High Risk Customers</h3>
+                    <div class="kpi-value" id="highRisk">0</div>
+                    <div class="kpi-trend negative">↗ +8</div>
+                </div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-icon">⏱️</div>
+                <div class="kpi-content">
+                    <h3 data-translate="kpis.avg_tenure">Avg Tenure</h3>
+                    <div class="kpi-value" id="avgTenure">0</div>
+                    <div class="kpi-trend positive">↗ +2.1</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Charts Container -->
+        <section class="charts-container">
+            <div class="chart-card">
+                <h3 data-translate="charts.churn_distribution">Churn Distribution</h3>
+                <div id="churnDistributionChart"></div>
+            </div>
+            <div class="chart-card">
+                <h3 data-translate="charts.churn_by_contract">Churn by Contract Type</h3>
+                <div id="churnByContractChart"></div>
+            </div>
+            <div class="chart-card">
+                <h3 data-translate="charts.revenue_analysis">Revenue Analysis</h3>
+                <div id="revenueChart"></div>
+            </div>
+            <div class="chart-card">
+                <h3 data-translate="charts.tenure_distribution">Tenure Distribution</h3>
+                <div id="tenureChart"></div>
+            </div>
+        </section>
+
+        <!-- AI Insights -->
+        <section class="ai-insights">
+            <h3 data-translate="ai_insights.title">🧠 AI-Powered Insights</h3>
+            <div class="insights-container" id="aiInsightsContainer">
+                <div class="insight-item">
+                    <div class="insight-icon">💡</div>
+                    <div class="insight-content">
+                        <strong>Month-to-month contracts</strong> show 42% higher churn rate compared to long-term contracts
+                    </div>
+                </div>
+                <div class="insight-item">
+                    <div class="insight-icon">📊</div>
+                    <div class="insight-content">
+                        <strong>Customers with tenure < 12 months</strong> are 3.5x more likely to churn
+                    </div>
+                </div>
+                <div class="insight-item">
+                    <div class="insight-icon">⚡</div>
+                    <div class="insight-content">
+                        <strong>Premium segment</strong> has lowest churn rate at 12.3%
+                    </div>
+                </div>
+                <div class="insight-item">
+                    <div class="insight-icon">🎯</div>
+                    <div class="insight-content">
+                        <strong>Predictive Model Accuracy:</strong> 87.5% - Ready for production deployment
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reports Center -->
+        <section class="reports-center">
+            <h3 data-translate="reports.title">📊 Reports Generation Center</h3>
+            <div class="reports-grid">
+                <div class="report-card">
+                    <div class="report-icon">👔</div>
+                    <h4 data-translate="reports.executive_title">Executive Report</h4>
+                    <p data-translate="reports.executive_desc">High-level insights for decision makers</p>
+                    <div class="report-actions">
+                        <button class="export-btn pdf" onclick="app.generateReport('executive', 'pdf')">
+                            📄 PDF
+                        </button>
+                        <button class="export-btn excel" onclick="app.generateReport('executive', 'excel')">
+                            📊 Excel
+                        </button>
+                    </div>
+                </div>
+                <div class="report-card">
+                    <div class="report-icon">🔬</div>
+                    <h4 data-translate="reports.technical_title">Technical Report</h4>
+                    <p data-translate="reports.technical_desc">Detailed statistical analysis and ML metrics</p>
+                    <div class="report-actions">
+                        <button class="export-btn pdf" onclick="app.generateReport('technical', 'pdf')">
+                            📄 PDF
+                        </button>
+                        <button class="export-btn excel" onclick="app.generateReport('technical', 'excel')">
+                            📊 Excel
+                        </button>
+                    </div>
+                </div>
+                <div class="report-card">
+                    <div class="report-icon">🔮</div>
+                    <h4 data-translate="reports.predictive_title">Predictive Forecast</h4>
+                    <p data-translate="reports.predictive_desc">ML-based churn predictions and trends</p>
+                    <div class="report-actions">
+                        <button class="export-btn pdf" onclick="app.generateReport('predictive', 'pdf')">
+                            📄 PDF
+                        </button>
+                        <button class="export-btn excel" onclick="app.generateReport('predictive', 'excel')">
+                            📊 Excel
+                        </button>
+                    </div>
+                </div>
+                <div class="report-card">
+                    <div class="report-icon">🎯</div>
+                    <h4 data-translate="reports.segmentation_title">Customer Segmentation</h4>
+                    <p data-translate="reports.segmentation_desc">Clustering analysis and segment profiles</p>
+                    <div class="report-actions">
+                        <button class="export-btn pdf" onclick="app.generateReport('segmentation', 'pdf')">
+                            📄 PDF
+                        </button>
+                        <button class="export-btn excel" onclick="app.generateReport('segmentation', 'excel')">
+                            📊 Excel
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer Table -->
+        <section class="intelligent-table">
+            <h3 data-translate="table.title">🏆 Customer Risk Ranking</h3>
+            <div class="table-controls">
+                <input type="text" id="searchTable" placeholder="Search customers..." class="search-input">
+                <select id="filterSegment" class="filter-select">
+                    <option value="">All Segments</option>
+                    <option value="Entry">Entry</option>
+                    <option value="Standard">Standard</option>
+                    <option value="Premium">Premium</option>
+                    <option value="Power User">Power User</option>
+                </select>
+            </div>
+            <div class="table-container">
+                <table id="customersTable">
+                    <thead>
+                        <tr>
+                            <th data-translate="table.customer_id">CUSTOMER ID</th>
+                            <th data-translate="table.segment">SEGMENT</th>
+                            <th data-translate="table.tenure">TENURE</th>
+                            <th data-translate="table.monthly_charges">MONTHLY CHARGES</th>
+                            <th data-translate="table.risk_score">RISK SCORE</th>
+                            <th data-translate="table.churn_status">CHURN STATUS</th>
+                            <th data-translate="table.actions">ACTIONS</th>
+                        </tr>
+                    </thead>
+                    <tbody id="customersTableBody">
+                        <!-- Data will be loaded dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer with Social Links -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3 data-translate="footer.title">Telecom X - Customer Churn Analysis</h3>
+                <p data-translate="footer.description">Transforming data into intelligent decisions</p>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/Lizzy0981" target="_blank" class="social-icon" title="GitHub">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12 0 17.31 3.435 21.795 8.205 23.385 8.805 23.49 9.03 23.13 9.03 22.815 9.03 22.53 9.015 21.585 9.015 20.475 5.67 21.135 4.965 18.795 4.965 18.795 4.425 17.475 3.63 17.115 3.63 17.115 2.535 16.41 3.717 16.425 3.717 16.425 4.92 16.53 5.555 17.625 5.555 17.625 6.615 19.335 8.325 18.795 9.075 18.48 9.18 17.685 9.495 17.145 9.84 16.815 7.17 16.47 4.35 15.405 4.35 10.935 4.35 9.675 4.815 8.625 5.595 7.785 5.445 7.425 6.615 6.795 9.045 8.625 10.02 8.445 11.01 8.625 13.44 6.795 14.055 7.425 13.905 7.785 14.385 8.625 14.385 10.935 14.385 15.405 11.565 16.47 8.895 16.815 9.24 17.145 9.555 17.685 9.66 18.48 10.41 18.795 11.47 19.335 12.525 17.625 13.16 16.53 14.355 16.425 15.54 16.41 14.445 17.115 13.65 17.475 13.11 18.795 13.11 18.795 12.345 21.135 11.64 23.49 12.24 23.385 17.01 21.795 20.445 17.31 20.445 12 20.445 5.37 15.075 0 8.445 0Z"/>
+                    </svg>
+                </a>
+                <a href="https://linkedin.com/in/eli-familia/" target="_blank" class="social-icon" title="LinkedIn">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                </a>
+                <a href="https://twitter.com/Lizzyfamilia" target="_blank" class="social-icon" title="Twitter">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-translate="footer.copyright">&copy; 2025 Elizabeth Díaz Familia - Developed with 💜 and lots of ☕</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/language-manager.js"></script>
+    <script src="js/chart-renderer.js"></script>
+    <script src="js/api-connector.js"></script>
+    <script src="js/main.js"></script>
+    
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js')
+                    .then(reg => console.log('✅ Service Worker registered'))
+                    .catch(err => console.log('❌ Service Worker registration failed:', err));
+            });
+        }
+    </script>
+</body>
+</html>

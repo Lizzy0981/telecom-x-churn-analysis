@@ -1,0 +1,45 @@
+{
+  "_comment": "Copy this file to api_keys.json and fill in your actual API keys",
+  "_instructions": "Never commit api_keys.json to version control",
+  "openai": {
+    "api_key": "sk-your-openai-api-key-here",
+    "organization": "org-your-organization-id",
+    "model": "gpt-4"
+  },
+  "anthropic": {
+    "api_key": "sk-ant-your-anthropic-api-key-here",
+    "model": "claude-3-sonnet-20240229"
+  },
+  "google": {
+    "api_key": "your-google-api-key-here",
+    "project_id": "your-project-id",
+    "service_account": "path/to/service-account.json"
+  },
+  "aws": {
+    "access_key_id": "YOUR_AWS_ACCESS_KEY_ID",
+    "secret_access_key": "YOUR_AWS_SECRET_ACCESS_KEY",
+    "region": "us-east-1"
+  },
+  "azure": {
+    "subscription_id": "your-subscription-id",
+    "client_id": "your-client-id",
+    "client_secret": "your-client-secret",
+    "tenant_id": "your-tenant-id"
+  },
+  "twilio": {
+    "account_sid": "ACxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "auth_token": "your-twilio-auth-token",
+    "phone_number": "+1234567890"
+  },
+  "sendgrid": {
+    "api_key": "SG.your-sendgrid-api-key",
+    "from_email": "noreply@telecomx.com"
+  },
+  "database": {
+    "host": "localhost",
+    "port": 5432,
+    "username": "telecom_user",
+    "password": "your-secure-password",
+    "database": "telecom_x"
+  }
+}

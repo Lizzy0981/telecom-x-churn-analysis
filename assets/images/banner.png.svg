@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400">
+  <!-- GitHub/Social Media Banner -->
+  <defs>
+    <linearGradient id="bannerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0F172A;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1a1a3e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#667eea;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Particles -->
+    <circle id="particle" r="2" fill="#667eea" opacity="0.6"/>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#bannerGradient)"/>
+  
+  <!-- Decorative Particles -->
+  <use href="#particle" x="100" y="50"/>
+  <use href="#particle" x="200" y="150"/>
+  <use href="#particle" x="300" y="80"/>
+  <use href="#particle" x="900" y="120"/>
+  <use href="#particle" x="1000" y="200"/>
+  <use href="#particle" x="1100" y="150"/>
+  
+  <!-- Main Title -->
+  <text x="600" y="180" text-anchor="middle" font-family="'SF Pro Display', sans-serif" font-size="72" font-weight="900" fill="white">
+    Telecom X
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="230" text-anchor="middle" font-family="'SF Pro Display', sans-serif" font-size="32" font-weight="400" fill="#E2E8F0">
+    Customer Churn Analysis with AI
+  </text>
+  
+  <!-- Technologies Badge -->
+  <g transform="translate(350, 280)">
+    <rect width="500" height="50" rx="25" fill="rgba(255,255,255,0.1)"/>
+    <text x="250" y="33" text-anchor="middle" font-family="'SF Pro Display', sans-serif" font-size="18" font-weight="600" fill="white">
+      Python • Pandas • Scikit-learn • Plotly • React
+    </text>
+  </g>
+</svg>

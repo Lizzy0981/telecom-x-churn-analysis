@@ -1,0 +1,97 @@
+{
+  "corporate": {
+    "primary": "#667eea",
+    "secondary": "#f093fb",
+    "tertiary": "#764ba2",
+    "quaternary": "#f78fb3",
+    "accent": "#4facfe"
+  },
+  "status": {
+    "success": "#51CF66",
+    "warning": "#FFD93D",
+    "error": "#FF6B6B",
+    "info": "#4DABF7",
+    "neutral": "#868E96"
+  },
+  "charts": {
+    "active": "#667eea",
+    "churned": "#f093fb",
+    "high_risk": "#FF6B6B",
+    "medium_risk": "#FFD93D",
+    "low_risk": "#51CF66",
+    "premium": "#764ba2",
+    "standard": "#4facfe",
+    "entry": "#868E96"
+  },
+  "gradients": {
+    "purple_pink": [
+      "#667eea",
+      "#f093fb"
+    ],
+    "blue_purple": [
+      "#4facfe",
+      "#764ba2"
+    ],
+    "warm": [
+      "#f78fb3",
+      "#FFD93D"
+    ],
+    "cool": [
+      "#4DABF7",
+      "#51CF66"
+    ]
+  },
+  "backgrounds": {
+    "light": "#FFFFFF",
+    "light_gray": "#F8F9FA",
+    "medium_gray": "#E9ECEF",
+    "dark_gray": "#495057",
+    "dark": "#212529"
+  },
+  "text": {
+    "primary": "#212529",
+    "secondary": "#495057",
+    "tertiary": "#868E96",
+    "light": "#FFFFFF",
+    "muted": "#ADB5BD"
+  },
+  "plotly_template": {
+    "layout": {
+      "font": {
+        "family": "Arial, sans-serif",
+        "size": 12,
+        "color": "#212529"
+      },
+      "title": {
+        "font": {
+          "family": "Arial Black, sans-serif",
+          "size": 16,
+          "color": "#667eea"
+        }
+      },
+      "colorway": [
+        "#667eea",
+        "#f093fb",
+        "#764ba2",
+        "#f78fb3",
+        "#4facfe",
+        "#51CF66",
+        "#FFD93D",
+        "#FF6B6B"
+      ],
+      "plot_bgcolor": "#FFFFFF",
+      "paper_bgcolor": "#FFFFFF"
+    }
+  },
+  "matplotlib_style": {
+    "axes.prop_cycle": "cycler('color', ['#667eea', '#f093fb', '#764ba2', '#f78fb3', '#4facfe', '#51CF66', '#FFD93D', '#FF6B6B'])",
+    "axes.facecolor": "#FFFFFF",
+    "figure.facecolor": "#FFFFFF",
+    "grid.color": "#E9ECEF",
+    "grid.linestyle": "--",
+    "grid.linewidth": 0.5,
+    "text.color": "#212529",
+    "xtick.color": "#495057",
+    "ytick.color": "#495057"
+  }
+}

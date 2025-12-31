@@ -1,0 +1,137 @@
+{
+  "app": {
+    "title": "Telecom X - Análisis de Churn",
+    "subtitle": "Plataforma de Inteligencia Predictiva",
+    "version": "1.0.0",
+    "author": "Elizabeth Díaz Familia"
+  },
+  "navigation": {
+    "home": "Inicio",
+    "dashboard": "Panel de Control",
+    "analysis": "Análisis",
+    "reports": "Reportes",
+    "settings": "Configuración",
+    "help": "Ayuda"
+  },
+  "dashboard": {
+    "title": "Panel de Control Ejecutivo",
+    "churn_rate": "Tasa de Abandono",
+    "retention_rate": "Tasa de Retención",
+    "total_customers": "Total de Clientes",
+    "revenue": "Ingresos Mensuales",
+    "high_risk": "Clientes de Alto Riesgo",
+    "active_customers": "Clientes Activos",
+    "churned_customers": "Clientes Abandonados"
+  },
+  "analysis": {
+    "title": "Análisis Detallado",
+    "by_contract": "Por Tipo de Contrato",
+    "by_segment": "Por Segmento",
+    "by_tenure": "Por Permanencia",
+    "by_charges": "Por Cargos",
+    "correlation": "Matriz de Correlación",
+    "trends": "Tendencias"
+  },
+  "reports": {
+    "title": "Generación de Reportes",
+    "generate": "Generar Reporte",
+    "executive": "Reporte Ejecutivo",
+    "technical": "Reporte Técnico",
+    "export_pdf": "Exportar a PDF",
+    "export_excel": "Exportar a Excel",
+    "export_csv": "Exportar a CSV"
+  },
+  "kpis": {
+    "total_customers": "Total de Clientes",
+    "churn_rate": "Tasa de Abandono",
+    "retention_rate": "Tasa de Retención",
+    "avg_monthly_charges": "Cargo Mensual Promedio",
+    "avg_tenure": "Permanencia Promedio",
+    "avg_total_charges": "Cargo Total Promedio",
+    "high_risk_customers": "Clientes de Alto Riesgo",
+    "premium_customers": "Clientes Premium",
+    "month_to_month_contracts": "Contratos Mes a Mes",
+    "avg_services": "Servicios Promedio por Cliente"
+  },
+  "charts": {
+    "churn_distribution": "Distribución de Abandono",
+    "churn_by_contract": "Abandono por Contrato",
+    "revenue_analysis": "Análisis de Ingresos",
+    "tenure_distribution": "Distribución de Permanencia",
+    "correlation_matrix": "Matriz de Correlación",
+    "risk_score": "Puntuación de Riesgo"
+  },
+  "actions": {
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "export": "Exportar",
+    "import": "Importar",
+    "refresh": "Actualizar",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "download": "Descargar"
+  },
+  "messages": {
+    "success": "Operación exitosa",
+    "error": "Error en la operación",
+    "warning": "Advertencia",
+    "info": "Información",
+    "loading": "Cargando...",
+    "no_data": "No hay datos disponibles",
+    "confirm_delete": "¿Está seguro de eliminar?",
+    "save_success": "Guardado exitosamente",
+    "save_error": "Error al guardar"
+  },
+  "customer": {
+    "id": "ID de Cliente",
+    "name": "Nombre",
+    "gender": "Género",
+    "senior_citizen": "Ciudadano Senior",
+    "tenure": "Permanencia (meses)",
+    "monthly_charges": "Cargo Mensual",
+    "total_charges": "Cargo Total",
+    "contract": "Tipo de Contrato",
+    "churn": "Abandono",
+    "risk_score": "Puntuación de Riesgo",
+    "segment": "Segmento"
+  },
+  "segments": {
+    "entry": "Entrada",
+    "standard": "Estándar",
+    "premium": "Premium",
+    "power_user": "Usuario Avanzado"
+  },
+  "contracts": {
+    "month_to_month": "Mes a Mes",
+    "one_year": "Un Año",
+    "two_year": "Dos Años"
+  },
+  "status": {
+    "active": "Activo",
+    "churned": "Abandonado",
+    "high_risk": "Alto Riesgo",
+    "low_risk": "Bajo Riesgo",
+    "normal": "Normal"
+  },
+  "time": {
+    "months": "meses",
+    "years": "años",
+    "days": "días",
+    "today": "Hoy",
+    "yesterday": "Ayer",
+    "last_week": "Última Semana",
+    "last_month": "Último Mes",
+    "last_year": "Último Año"
+  },
+  "settings": {
+    "title": "Configuración",
+    "language": "Idioma",
+    "theme": "Tema",
+    "notifications": "Notificaciones",
+    "api_keys": "Claves API",
+    "data_refresh": "Actualización de Datos",
+    "export_format": "Formato de Exportación"
+  }
+}
