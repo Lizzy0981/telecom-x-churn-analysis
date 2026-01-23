@@ -234,6 +234,29 @@ node_modules/
 package-lock.json
 
 # ============================================================================
+# WEB INTERFACE
+# ============================================================================
+# Web build artifacts
+web/dist/
+web/build/
+
+# IndexedDB storage
+web/indexeddb/
+*.indexeddb
+
+# Service Worker cache
+web/cache/
+sw-cache/
+
+# Generated reports from web interface
+web/exports/
+web/downloads/
+
+# Web temporary files
+web/temp/
+web/tmp/
+
+# ============================================================================
 # KEEP THESE FILES
 # ============================================================================
 # Force include important files
