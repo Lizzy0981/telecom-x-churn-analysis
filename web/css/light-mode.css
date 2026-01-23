@@ -1,0 +1,419 @@
+/* ============================================================================
+   TELECOM X - LIGHT MODE (MODO CLARO)
+   La aplicación es OSCURA por defecto, este CSS cambia a CLARO
+   ============================================================================ */
+
+/* LIGHT MODE - Se activa cuando body tiene clase 'light-mode' */
+body.light-mode {
+    /* Variables para modo claro */
+    --dark-bg: #F8FAFC;
+    --darker-bg: #F1F5F9;
+    --card-bg: rgba(255, 255, 255, 0.95);
+    --glass-bg: rgba(255, 255, 255, 0.85);
+    --text-light: #1E293B;
+    --text-accent: #475569;
+    --text-muted: #64748B;
+    --border-elegant: rgba(148, 163, 184, 0.3);
+    
+    /* Fondo claro */
+    background: linear-gradient(135deg, #F8FAFC 0%, #E2E8F0 50%, #F1F5F9 100%);
+}
+
+/* ===== HEADER ===== */
+body.light-mode .header {
+    background: linear-gradient(135deg, #FFFFFF 0%, #F8FAFC 100%);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+body.light-mode .logo-text {
+    color: #1E293B;
+}
+
+body.light-mode .tagline {
+    color: #64748B;
+}
+
+body.light-mode .ai-status {
+    color: #10B981;
+}
+
+/* ===== NAVIGATION ===== */
+body.light-mode .nav-btn {
+    background: rgba(255, 255, 255, 0.9);
+    color: #475569;
+    border: 1px solid #E2E8F0;
+}
+
+body.light-mode .nav-btn:hover {
+    background: #667eea;
+    color: white;
+    border-color: #667eea;
+}
+
+/* ===== KPI CARDS ===== */
+body.light-mode .kpi-card {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+body.light-mode .kpi-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    border-color: #667eea;
+}
+
+body.light-mode .kpi-label {
+    color: #64748B;
+}
+
+body.light-mode .kpi-value {
+    color: #1E293B;
+}
+
+body.light-mode .kpi-icon {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* ===== UPLOAD SECTION ===== */
+body.light-mode .upload-zone {
+    background: rgba(255, 255, 255, 0.95) !important;
+    border: 2px dashed #CBD5E1 !important;
+    color: #475569 !important;
+}
+
+body.light-mode .upload-zone:hover {
+    border-color: #667eea !important;
+    background: rgba(248, 250, 252, 0.98) !important;
+}
+
+body.light-mode .upload-icon {
+    color: #667eea;
+}
+
+body.light-mode .upload-formats {
+    color: #64748B;
+}
+
+body.light-mode .upload-preview {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #E2E8F0;
+}
+
+/* ===== DEMO SELECTOR ===== */
+body.light-mode .demo-selector {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #E2E8F0;
+}
+
+body.light-mode .demo-title {
+    color: #1E293B;
+}
+
+body.light-mode .demo-subtitle {
+    color: #64748B;
+}
+
+body.light-mode .demo-card {
+    background: rgba(255, 255, 255, 0.95);
+    border: 2px solid #E2E8F0;
+}
+
+body.light-mode .demo-card:hover {
+    box-shadow: 0 8px 24px rgba(102, 126, 234, 0.2);
+    border-color: #667eea;
+}
+
+body.light-mode .demo-card.active {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+    border-color: #667eea;
+}
+
+body.light-mode .demo-card h4 {
+    color: #1E293B;
+}
+
+body.light-mode .demo-card p {
+    color: #64748B;
+}
+
+body.light-mode .demo-badge {
+    background: rgba(102, 126, 234, 0.15);
+    color: #667eea;
+}
+
+/* ===== CHARTS ===== */
+body.light-mode .chart-card {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+body.light-mode .chart-title {
+    color: #1E293B;
+}
+
+/* ===== ML SECTIONS ===== */
+body.light-mode .ml-section,
+body.light-mode .correlation-section,
+body.light-mode .anomaly-section {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+body.light-mode .section-title {
+    color: #1E293B;
+}
+
+body.light-mode .section-subtitle {
+    color: #64748B;
+}
+
+/* ===== CLUSTERING ===== */
+body.light-mode .cluster-card {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #E2E8F0;
+}
+
+body.light-mode .cluster-card h4 {
+    color: #667eea;
+}
+
+body.light-mode .cluster-card p {
+    color: #475569;
+}
+
+/* ===== TABLES ===== */
+body.light-mode table {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #E2E8F0;
+}
+
+body.light-mode th {
+    background: #F8FAFC;
+    color: #1E293B;
+    border-bottom: 2px solid #E2E8F0;
+}
+
+body.light-mode td {
+    color: #475569;
+    border-bottom: 1px solid #F1F5F9;
+}
+
+body.light-mode tr:hover {
+    background: #F8FAFC;
+}
+
+/* ===== BADGES ===== */
+body.light-mode .badge {
+    border: 1px solid #E2E8F0;
+}
+
+body.light-mode .badge-info {
+    background: #DBEAFE;
+    color: #1E40AF;
+}
+
+body.light-mode .badge-success {
+    background: #D1FAE5;
+    color: #065F46;
+}
+
+body.light-mode .badge-warning {
+    background: #FEF3C7;
+    color: #92400E;
+}
+
+body.light-mode .badge-error {
+    background: #FEE2E2;
+    color: #991B1B;
+}
+
+/* ===== BUTTONS ===== */
+body.light-mode .btn {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .btn:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+body.light-mode .btn-primary {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+}
+
+body.light-mode .btn-secondary {
+    background: white;
+    border: 1px solid #E2E8F0;
+    color: #475569;
+}
+
+body.light-mode .btn-secondary:hover {
+    background: #F8FAFC;
+    border-color: #667eea;
+}
+
+/* ===== INPUTS ===== */
+body.light-mode .search-input,
+body.light-mode .filter-select,
+body.light-mode .ml-select {
+    background: white;
+    border: 1px solid #E2E8F0;
+    color: #1E293B;
+}
+
+body.light-mode .search-input:focus,
+body.light-mode .filter-select:focus,
+body.light-mode .ml-select:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* ===== REPORTS ===== */
+body.light-mode .report-card {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+body.light-mode .report-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+body.light-mode .report-title {
+    color: #1E293B;
+}
+
+body.light-mode .report-description {
+    color: #64748B;
+}
+
+/* ===== EXPORT SECTION ===== */
+body.light-mode .export-section {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #E2E8F0;
+}
+
+body.light-mode .export-btn {
+    background: white;
+    border: 1px solid #E2E8F0;
+    color: #475569;
+}
+
+body.light-mode .export-btn:hover {
+    border-color: #667eea;
+    background: #F8FAFC;
+}
+
+/* ===== INSIGHTS ===== */
+body.light-mode .insight-item {
+    background: rgba(255, 255, 255, 0.95);
+    border-left: 4px solid #667eea;
+}
+
+body.light-mode .insight-title {
+    color: #1E293B;
+}
+
+body.light-mode .insight-text {
+    color: #475569;
+}
+
+/* ===== FOOTER ===== */
+body.light-mode .footer {
+    background: rgba(255, 255, 255, 0.95);
+    border-top: 1px solid #E2E8F0;
+}
+
+body.light-mode .footer h3 {
+    color: #1E293B;
+}
+
+body.light-mode .footer p {
+    color: #64748B;
+}
+
+body.light-mode .social-icon {
+    color: #64748B;
+    border: 1px solid #E2E8F0;
+}
+
+body.light-mode .social-icon:hover {
+    color: #667eea;
+    border-color: #667eea;
+    background: #F8FAFC;
+}
+
+/* ===== LANGUAGE DROPDOWN ===== */
+body.light-mode .language-dropdown {
+    background: white;
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+body.light-mode .language-option {
+    color: #475569;
+}
+
+body.light-mode .language-option:hover {
+    background: #F8FAFC;
+}
+
+body.light-mode .language-option.active {
+    background: #EEF2FF;
+    color: #667eea;
+}
+
+/* ===== SCROLLBAR ===== */
+body.light-mode ::-webkit-scrollbar {
+    background: #F1F5F9;
+}
+
+body.light-mode ::-webkit-scrollbar-thumb {
+    background: #CBD5E1;
+}
+
+body.light-mode ::-webkit-scrollbar-thumb:hover {
+    background: #94A3B8;
+}
+
+/* ===== FILES LIST ===== */
+body.light-mode .file-item {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #E2E8F0;
+}
+
+body.light-mode .file-details strong {
+    color: #1E293B;
+}
+
+body.light-mode .file-details small {
+    color: #64748B;
+}
+
+/* ===== ANOMALY ITEMS ===== */
+body.light-mode .anomaly-item {
+    background: rgba(255, 255, 255, 0.95);
+    border-left: 4px solid #EF4444;
+}
+
+body.light-mode .anomaly-header strong {
+    color: #1E293B;
+}
+
+body.light-mode .anomaly-item p {
+    color: #475569;
+}
+
+body.light-mode .anomaly-details {
+    color: #64748B;
+}
+
+/* ===== TRANSITIONS ===== */
+body.light-mode,
+body.light-mode * {
+    transition: background-color 0.3s ease, 
+                border-color 0.3s ease, 
+                color 0.3s ease,
+                box-shadow 0.3s ease;
+}

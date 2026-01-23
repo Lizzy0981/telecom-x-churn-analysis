@@ -1,0 +1,256 @@
+/* ============================================================================
+   TELECOM X - DEMO SELECTOR STYLES
+   Styles for demo dataset cards and selector
+   ============================================================================ */
+
+/* Demo Selector Container */
+.demo-selector {
+    margin-top: 30px;
+    padding: 25px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    border: 1px solid var(--border-elegant);
+}
+
+.demo-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.3rem;
+    color: var(--text-light);
+    margin-bottom: 8px;
+}
+
+.demo-title .icon {
+    font-size: 1.5rem;
+}
+
+.demo-subtitle {
+    color: var(--text-accent);
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+/* Demo Grid */
+.demo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Demo Card */
+.demo-card {
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 20px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.demo-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 0;
+}
+
+.demo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(102, 126, 234, 0.3);
+    border-color: var(--primary);
+}
+
+.demo-card:hover::before {
+    opacity: 0.1;
+}
+
+/* Active Demo Card */
+.demo-card.active {
+    border-color: var(--primary);
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(240, 147, 251, 0.2) 100%);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+.demo-card.active::after {
+    content: '✓';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    background: var(--success);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+/* Demo Card Content */
+.demo-icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.demo-card h4 {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.demo-card p {
+    font-size: 0.85rem;
+    color: var(--text-accent);
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.demo-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    background: rgba(102, 126, 234, 0.3);
+    border-radius: 12px;
+    font-size: 0.75rem;
+    color: var(--text-light);
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+}
+
+/* Upload Actions - Show only when needed */
+.upload-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.upload-actions .btn {
+    flex: 1;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.upload-actions .btn-primary {
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    color: white;
+}
+
+.upload-actions .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.upload-actions .btn-secondary {
+    background: linear-gradient(45deg, #6c757d, #495057);
+    color: white;
+}
+
+.upload-actions .btn-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(108, 117, 125, 0.4);
+}
+
+/* Files List */
+.files-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.file-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    background: var(--card-bg);
+    border-radius: 8px;
+    border: 1px solid var(--border-elegant);
+}
+
+.file-icon {
+    font-size: 1.5rem;
+}
+
+.file-details {
+    flex: 1;
+}
+
+.file-details strong {
+    display: block;
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin-bottom: 3px;
+}
+
+.file-details small {
+    color: var(--text-accent);
+    font-size: 0.8rem;
+}
+
+/* Dark Mode Adjustments */
+body.dark-mode .demo-card {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .demo-card:hover {
+    box-shadow: 0 15px 35px rgba(102, 126, 234, 0.5);
+}
+
+body.dark-mode .demo-card.active {
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .demo-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 12px;
+    }
+    
+    .demo-card {
+        padding: 15px;
+    }
+    
+    .demo-icon {
+        font-size: 2rem;
+    }
+    
+    .demo-card h4 {
+        font-size: 1rem;
+    }
+    
+    .upload-actions {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .demo-grid {
+        grid-template-columns: 1fr;
+    }
+}
