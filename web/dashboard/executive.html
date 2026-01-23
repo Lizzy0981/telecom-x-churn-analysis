@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executive Dashboard - Telecom X</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <script src="https://cdn.plot.ly/plotly-2.26.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-main">
+                <h1>👔 Executive Dashboard</h1>
+                <p class="subtitle">High-Level Business Intelligence</p>
+                <button class="btn btn-secondary" onclick="window.location.href='../index.html'">← Back to Main</button>
+            </div>
+        </header>
+
+        <section class="kpis-container">
+            <div class="kpi-card">
+                <div class="kpi-icon">💰</div>
+                <div class="kpi-content">
+                    <h3>Total Revenue</h3>
+                    <div class="kpi-value">$2.4M</div>
+                    <div class="kpi-trend positive">↗ +12.5%</div>
+                </div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-icon">📉</div>
+                <div class="kpi-content">
+                    <h3>Churn Rate</h3>
+                    <div class="kpi-value">27.0%</div>
+                    <div class="kpi-trend negative">↗ +1.5%</div>
+                </div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-icon">💎</div>
+                <div class="kpi-content">
+                    <h3>Customer Lifetime Value</h3>
+                    <div class="kpi-value">$3,240</div>
+                    <div class="kpi-trend positive">↗ +8.2%</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="charts-container">
+            <div class="chart-card">
+                <h3>Revenue Trend</h3>
+                <div id="revenueTrendChart"></div>
+            </div>
+            <div class="chart-card">
+                <h3>Customer Segmentation</h3>
+                <div id="segmentationChart"></div>
+            </div>
+        </section>
+
+        <section class="ai-insights">
+            <h3>🧠 Strategic Insights</h3>
+            <div class="insights-container">
+                <div class="insight-item">
+                    <div class="insight-icon">📊</div>
+                    <div class="insight-content">
+                        <strong>Revenue Growth:</strong> Month-over-month revenue increased by 12.5%, driven primarily by premium customer acquisition
+                    </div>
+                </div>
+                <div class="insight-item">
+                    <div class="insight-icon">⚠️</div>
+                    <div class="insight-content">
+                        <strong>Churn Alert:</strong> Month-to-month customers show 42% higher churn rate - recommend targeted retention campaigns
+                    </div>
+                </div>
+                <div class="insight-item">
+                    <div class="insight-icon">🎯</div>
+                    <div class="insight-content">
+                        <strong>Opportunity:</strong> Premium segment shows highest CLV at $4,850 - focus expansion efforts here
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="../js/language-manager.js"></script>
+    <script src="../js/chart-renderer.js"></script>
+    <script>
+        // Initialize executive dashboard charts
+        document.addEventListener('DOMContentLoaded', () => {
+            const renderer = new ChartRenderer();
+            
+            // Revenue Trend
+            const revenuePlot = [{
+                x: ['Q1', 'Q2', 'Q3', 'Q4'],
+                y: [580000, 625000, 710000, 485000],
+                type: 'scatter',
+                mode: 'lines+markers',
+                line: { color: '#667eea', width: 3 },
+                marker: { size: 12, color: '#f093fb' }
+            }];
+            Plotly.newPlot('revenueTrendChart', revenuePlot, renderer.defaultLayout, {responsive: true, displayModeBar: false});
+            
+            // Segmentation
+            const segPlot = [{
+                values: [30, 35, 25, 10],
+                labels: ['Entry', 'Standard', 'Premium', 'Power User'],
+                type: 'pie',
+                marker: { colors: ['#667eea', '#f093fb', '#764ba2', '#4facfe'] }
+            }];
+            Plotly.newPlot('segmentationChart', segPlot, renderer.defaultLayout, {responsive: true, displayModeBar: false});
+        });
+    </script>
+</body>
+</html>
