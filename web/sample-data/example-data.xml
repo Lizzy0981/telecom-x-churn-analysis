@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customers>
+  <customer>
+    <customerID>0001-ABCDE</customerID>
+    <Churn>No</Churn>
+    <demographics>
+      <gender>Male</gender>
+      <SeniorCitizen>0</SeniorCitizen>
+      <Partner>Yes</Partner>
+      <Dependents>No</Dependents>
+      <tenure>12</tenure>
+    </demographics>
+    <phone>
+      <PhoneService>Yes</PhoneService>
+      <MultipleLines>No</MultipleLines>
+    </phone>
+    <internet>
+      <InternetService>DSL</InternetService>
+      <OnlineSecurity>No</OnlineSecurity>
+      <OnlineBackup>Yes</OnlineBackup>
+      <DeviceProtection>No</DeviceProtection>
+      <TechSupport>No</TechSupport>
+      <StreamingTV>No</StreamingTV>
+      <StreamingMovies>No</StreamingMovies>
+    </internet>
+    <account>
+      <Contract>One year</Contract>
+      <PaperlessBilling>Yes</PaperlessBilling>
+      <PaymentMethod>Mailed check</PaymentMethod>
+      <MonthlyCharges>53.85</MonthlyCharges>
+      <TotalCharges>646.20</TotalCharges>
+    </account>
+  </customer>
+  <customer>
+    <customerID>0002-FGHIJ</customerID>
+    <Churn>Yes</Churn>
+    <demographics>
+      <gender>Female</gender>
+      <SeniorCitizen>1</SeniorCitizen>
+      <Partner>No</Partner>
+      <Dependents>No</Dependents>
+      <tenure>3</tenure>
+    </demographics>
+    <phone>
+      <PhoneService>Yes</PhoneService>
+      <MultipleLines>No</MultipleLines>
+    </phone>
+    <internet>
+      <InternetService>Fiber optic</InternetService>
+      <OnlineSecurity>No</OnlineSecurity>
+      <OnlineBackup>No</OnlineBackup>
+      <DeviceProtection>No</DeviceProtection>
+      <TechSupport>No</TechSupport>
+      <StreamingTV>Yes</StreamingTV>
+      <StreamingMovies>Yes</StreamingMovies>
+    </internet>
+    <account>
+      <Contract>Month-to-month</Contract>
+      <PaperlessBilling>Yes</PaperlessBilling>
+      <PaymentMethod>Electronic check</PaymentMethod>
+      <MonthlyCharges>89.50</MonthlyCharges>
+      <TotalCharges>268.50</TotalCharges>
+    </account>
+  </customer>
+  <customer>
+    <customerID>0003-KLMNO</customerID>
+    <Churn>No</Churn>
+    <demographics>
+      <gender>Male</gender>
+      <SeniorCitizen>0</SeniorCitizen>
+      <Partner>No</Partner>
+      <Dependents>No</Dependents>
+      <tenure>24</tenure>
+    </demographics>
+    <phone>
+      <PhoneService>Yes</PhoneService>
+      <MultipleLines>Yes</MultipleLines>
+    </phone>
+    <internet>
+      <InternetService>Fiber optic</InternetService>
+      <OnlineSecurity>Yes</OnlineSecurity>
+      <OnlineBackup>Yes</OnlineBackup>
+      <DeviceProtection>Yes</DeviceProtection>
+      <TechSupport>Yes</TechSupport>
+      <StreamingTV>Yes</StreamingTV>
+      <StreamingMovies>Yes</StreamingMovies>
+    </internet>
+    <account>
+      <Contract>Two year</Contract>
+      <PaperlessBilling>No</PaperlessBilling>
+      <PaymentMethod>Bank transfer</PaymentMethod>
+      <MonthlyCharges>105.75</MonthlyCharges>
+      <TotalCharges>2538.00</TotalCharges>
+    </account>
+  </customer>
+</customers>

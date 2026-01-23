@@ -1,0 +1,437 @@
+/**
+ * RESPONSIVE.CSS - Diseño responsive mobile-first
+ * Breakpoints: Mobile (< 768px), Tablet (768px - 1024px), Desktop (> 1024px)
+ */
+
+/* ===================================
+   BASE - MOBILE FIRST
+   =================================== */
+.container {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* ===================================
+   HEADER
+   =================================== */
+header {
+    padding: 15px;
+}
+
+.header-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+
+.logo-text {
+    font-size: 20px;
+}
+
+.tagline {
+    font-size: 12px;
+}
+
+/* ===================================
+   NAVIGATION
+   =================================== */
+nav {
+    display: none; /* Burger menu en mobile */
+}
+
+.mobile-menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 9999;
+    padding: 20px;
+}
+
+.mobile-menu.active {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===================================
+   KPIs
+   =================================== */
+.kpis-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.kpi-card {
+    padding: 20px;
+}
+
+.kpi-value {
+    font-size: 28px;
+}
+
+.kpi-label {
+    font-size: 13px;
+}
+
+/* ===================================
+   CHARTS
+   =================================== */
+.charts-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.chart-card {
+    padding: 15px;
+}
+
+/* ===================================
+   TABLE
+   =================================== */
+.table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+table {
+    min-width: 100%;
+    font-size: 13px;
+}
+
+th, td {
+    padding: 10px 8px;
+    white-space: nowrap;
+}
+
+/* ===================================
+   FILTERS
+   =================================== */
+.filters-container {
+    flex-direction: column;
+    gap: 15px;
+}
+
+.filter-group {
+    width: 100%;
+}
+
+/* ===================================
+   QUICK ACTIONS
+   =================================== */
+.quick-actions {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.action-btn {
+    width: 100%;
+    justify-content: center;
+}
+
+/* ===================================
+   REPORTS
+   =================================== */
+.reports-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+/* ===================================
+   TABLET (768px - 1024px)
+   =================================== */
+@media (min-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    /* Header */
+    .header-content {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .logo-text {
+        font-size: 24px;
+    }
+
+    .tagline {
+        font-size: 14px;
+    }
+
+    /* Navigation */
+    nav {
+        display: flex;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+
+    /* KPIs - 2 columnas */
+    .kpis-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .kpi-card {
+        padding: 25px;
+    }
+
+    .kpi-value {
+        font-size: 32px;
+    }
+
+    /* Charts - 2 columnas */
+    .charts-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .chart-card {
+        padding: 20px;
+    }
+
+    /* Filters - horizontal */
+    .filters-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .filter-group {
+        width: auto;
+        flex: 1;
+        min-width: 200px;
+    }
+
+    /* Quick actions - horizontal */
+    .quick-actions {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .action-btn {
+        width: auto;
+        flex: 1;
+        min-width: 150px;
+    }
+
+    /* Reports - 2 columnas */
+    .reports-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+/* ===================================
+   DESKTOP (> 1024px)
+   =================================== */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 30px;
+    }
+
+    /* Header */
+    header {
+        padding: 20px 30px;
+    }
+
+    .logo-text {
+        font-size: 28px;
+    }
+
+    /* KPIs - 3 o 4 columnas */
+    .kpis-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+    }
+
+    .kpi-card {
+        padding: 30px;
+    }
+
+    .kpi-value {
+        font-size: 36px;
+    }
+
+    .kpi-label {
+        font-size: 14px;
+    }
+
+    /* Charts - 2 columnas grandes */
+    .charts-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .chart-card {
+        padding: 25px;
+    }
+
+    /* Reports - 2 columnas */
+    .reports-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    /* Table */
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 12px 15px;
+    }
+}
+
+/* ===================================
+   LARGE DESKTOP (> 1440px)
+   =================================== */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1600px;
+    }
+
+    /* KPIs - 4 columnas */
+    .kpis-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Charts - 3 columnas */
+    .charts-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Reports - 3 columnas */
+    .reports-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ===================================
+   UTILITIES RESPONSIVE
+   =================================== */
+.hide-mobile {
+    display: none !important;
+}
+
+.hide-tablet {
+    display: block !important;
+}
+
+.hide-desktop {
+    display: block !important;
+}
+
+@media (min-width: 768px) {
+    .hide-mobile {
+        display: block !important;
+    }
+    .hide-tablet {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hide-desktop {
+        display: none !important;
+    }
+}
+
+/* ===================================
+   ORIENTACIÓN
+   =================================== */
+@media (orientation: landscape) and (max-width: 768px) {
+    .kpis-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .charts-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ===================================
+   TOUCH OPTIMIZATIONS
+   =================================== */
+@media (hover: none) {
+    .action-btn,
+    .kpi-card,
+    .report-card,
+    .chart-card {
+        transform: none !important;
+    }
+
+    button,
+    a,
+    .clickable {
+        min-height: 44px; /* Touch target size */
+        min-width: 44px;
+    }
+}
+
+/* ===================================
+   PRINT
+   =================================== */
+@media print {
+    header,
+    footer,
+    nav,
+    .quick-actions,
+    .filters-container,
+    .action-btn {
+        display: none !important;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .kpi-card,
+    .chart-card,
+    .report-card {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+}
+
+/* ===================================
+   ACCESIBILIDAD
+   =================================== */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Alto contraste */
+@media (prefers-contrast: high) {
+    .kpi-card,
+    .chart-card,
+    .report-card {
+        border-width: 2px;
+    }
+
+    button,
+    a {
+        text-decoration: underline;
+    }
+}

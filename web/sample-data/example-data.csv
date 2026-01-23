@@ -1,0 +1,11 @@
+customerID,Churn,gender,SeniorCitizen,Partner,Dependents,tenure,PhoneService,MultipleLines,InternetService,OnlineSecurity,OnlineBackup,DeviceProtection,TechSupport,StreamingTV,StreamingMovies,Contract,PaperlessBilling,PaymentMethod,MonthlyCharges,TotalCharges
+0001-ABCDE,No,Male,0,Yes,No,12,Yes,No,DSL,No,Yes,No,No,No,No,One year,Yes,Mailed check,53.85,646.20
+0002-FGHIJ,Yes,Female,1,No,No,3,Yes,No,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check,89.50,268.50
+0003-KLMNO,No,Male,0,No,No,24,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Two year,No,Bank transfer,105.75,2538.00
+0004-PQRST,No,Female,0,Yes,Yes,48,Yes,Yes,DSL,Yes,No,Yes,No,No,No,One year,No,Credit card,68.40,3283.20
+0005-UVWXY,Yes,Male,1,Yes,No,6,No,No phone service,Fiber optic,No,No,No,No,Yes,No,Month-to-month,Yes,Electronic check,78.25,469.50
+0006-ZABCD,No,Female,0,No,Yes,36,Yes,No,DSL,Yes,Yes,No,Yes,No,Yes,Two year,Yes,Bank transfer,62.90,2264.40
+0007-EFGHI,Yes,Male,0,Yes,No,1,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Electronic check,98.45,98.45
+0008-JKLMN,No,Female,1,No,No,60,Yes,No,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Two year,No,Credit card,85.10,5106.00
+0009-OPQRS,No,Male,0,Yes,Yes,18,Yes,Yes,Fiber optic,Yes,No,Yes,No,Yes,Yes,One year,Yes,Mailed check,112.30,2021.40
+0010-TUVWX,Yes,Female,0,No,No,2,No,No phone service,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Mailed check,20.00,40.00

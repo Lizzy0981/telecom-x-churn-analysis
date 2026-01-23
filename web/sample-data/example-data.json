@@ -1,0 +1,101 @@
+[
+  {
+    "customerID": "0001-ABCDE",
+    "Churn": "No",
+    "customer": {
+      "gender": "Male",
+      "SeniorCitizen": 0,
+      "Partner": "Yes",
+      "Dependents": "No",
+      "tenure": 12
+    },
+    "phone": {
+      "PhoneService": "Yes",
+      "MultipleLines": "No"
+    },
+    "internet": {
+      "InternetService": "DSL",
+      "OnlineSecurity": "No",
+      "OnlineBackup": "Yes",
+      "DeviceProtection": "No",
+      "TechSupport": "No",
+      "StreamingTV": "No",
+      "StreamingMovies": "No"
+    },
+    "account": {
+      "Contract": "One year",
+      "PaperlessBilling": "Yes",
+      "PaymentMethod": "Mailed check",
+      "Charges": {
+        "Monthly": 53.85,
+        "Total": 646.20
+      }
+    }
+  },
+  {
+    "customerID": "0002-FGHIJ",
+    "Churn": "Yes",
+    "customer": {
+      "gender": "Female",
+      "SeniorCitizen": 1,
+      "Partner": "No",
+      "Dependents": "No",
+      "tenure": 3
+    },
+    "phone": {
+      "PhoneService": "Yes",
+      "MultipleLines": "No"
+    },
+    "internet": {
+      "InternetService": "Fiber optic",
+      "OnlineSecurity": "No",
+      "OnlineBackup": "No",
+      "DeviceProtection": "No",
+      "TechSupport": "No",
+      "StreamingTV": "Yes",
+      "StreamingMovies": "Yes"
+    },
+    "account": {
+      "Contract": "Month-to-month",
+      "PaperlessBilling": "Yes",
+      "PaymentMethod": "Electronic check",
+      "Charges": {
+        "Monthly": 89.50,
+        "Total": 268.50
+      }
+    }
+  },
+  {
+    "customerID": "0003-KLMNO",
+    "Churn": "No",
+    "customer": {
+      "gender": "Male",
+      "SeniorCitizen": 0,
+      "Partner": "No",
+      "Dependents": "No",
+      "tenure": 24
+    },
+    "phone": {
+      "PhoneService": "Yes",
+      "MultipleLines": "Yes"
+    },
+    "internet": {
+      "InternetService": "Fiber optic",
+      "OnlineSecurity": "Yes",
+      "OnlineBackup": "Yes",
+      "DeviceProtection": "Yes",
+      "TechSupport": "Yes",
+      "StreamingTV": "Yes",
+      "StreamingMovies": "Yes"
+    },
+    "account": {
+      "Contract": "Two year",
+      "PaperlessBilling": "No",
+      "PaymentMethod": "Bank transfer",
+      "Charges": {
+        "Monthly": 105.75,
+        "Total": 2538.00
+      }
+    }
+  }
+]

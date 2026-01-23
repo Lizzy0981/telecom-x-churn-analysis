@@ -1,0 +1,246 @@
+/**
+ * DARK-MODE.CSS - Tema oscuro para la aplicación
+ * Variables CSS para fácil cambio de tema
+ */
+
+/* ===================================
+   VARIABLES DE TEMA OSCURO
+   =================================== */
+[data-theme="dark"] {
+    --bg-primary: #1a1a2e;
+    --bg-secondary: #16213e;
+    --bg-tertiary: #0f3460;
+    --text-primary: #eaeaea;
+    --text-secondary: #a0a0a0;
+    --accent-primary: #667eea;
+    --accent-secondary: #764ba2;
+    --border-color: #2d3748;
+    --card-bg: #1e2836;
+    --hover-bg: #2d3748;
+}
+
+/* ===================================
+   ESTILOS BASE MODO OSCURO
+   =================================== */
+[data-theme="dark"] body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .container {
+    background-color: var(--bg-primary);
+}
+
+/* ===================================
+   HEADER
+   =================================== */
+[data-theme="dark"] header {
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+    border-bottom: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .logo-text {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .tagline {
+    color: var(--text-secondary);
+}
+
+/* ===================================
+   CARDS
+   =================================== */
+[data-theme="dark"] .kpi-card,
+[data-theme="dark"] .report-card,
+[data-theme="dark"] .chart-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .kpi-card:hover,
+[data-theme="dark"] .report-card:hover,
+[data-theme="dark"] .chart-card:hover {
+    border-color: var(--accent-primary);
+    transform: translateY(-2px);
+}
+
+/* ===================================
+   TABLAS
+   =================================== */
+[data-theme="dark"] table {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] th {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+    border-bottom: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] td {
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-secondary);
+}
+
+[data-theme="dark"] tr:hover {
+    background: var(--hover-bg);
+}
+
+/* ===================================
+   INPUTS Y FORMS
+   =================================== */
+[data-theme="dark"] input,
+[data-theme="dark"] select,
+[data-theme="dark"] textarea {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] input:focus,
+[data-theme="dark"] select:focus,
+[data-theme="dark"] textarea:focus {
+    border-color: var(--accent-primary);
+    background: var(--bg-tertiary);
+}
+
+/* ===================================
+   BOTONES
+   =================================== */
+[data-theme="dark"] .btn-primary {
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+}
+
+[data-theme="dark"] .btn-secondary {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .btn-secondary:hover {
+    background: var(--hover-bg);
+}
+
+/* ===================================
+   UPLOAD ZONE
+   =================================== */
+[data-theme="dark"] .upload-zone {
+    background: var(--card-bg);
+}
+
+[data-theme="dark"] .upload-area {
+    background: var(--bg-secondary);
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .upload-area:hover {
+    background: var(--bg-tertiary);
+    border-color: var(--accent-primary);
+}
+
+/* ===================================
+   NOTIFICATIONS
+   =================================== */
+[data-theme="dark"] .toast {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .toast-message {
+    color: var(--text-primary);
+}
+
+/* ===================================
+   SCROLLBAR
+   =================================== */
+[data-theme="dark"] ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-track {
+    background: var(--bg-secondary);
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+    background: var(--bg-tertiary);
+    border-radius: 5px;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-primary);
+}
+
+/* ===================================
+   FOOTER
+   =================================== */
+[data-theme="dark"] footer {
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] footer a {
+    color: var(--text-secondary);
+}
+
+[data-theme="dark"] footer a:hover {
+    color: var(--accent-primary);
+}
+
+/* ===================================
+   THEME TOGGLE BUTTON
+   =================================== */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.theme-icon {
+    font-size: 24px;
+}
+
+/* ===================================
+   GRÁFICOS PLOTLY
+   =================================== */
+[data-theme="dark"] .plotly {
+    background: var(--card-bg) !important;
+}
+
+[data-theme="dark"] .plotly .bg {
+    fill: var(--card-bg) !important;
+}
+
+[data-theme="dark"] .plotly .gridlayer .grid path {
+    stroke: var(--border-color) !important;
+}
+
+[data-theme="dark"] .plotly text {
+    fill: var(--text-primary) !important;
+}
+
+/* ===================================
+   TRANSITIONS
+   =================================== */
+* {
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
