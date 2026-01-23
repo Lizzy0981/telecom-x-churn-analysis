@@ -1,0 +1,99 @@
+{
+    "app": {
+        "title": "טלקום X - ניתוח נטישת לקוחות",
+        "subtitle": "פלטפורמת אינטליגנציה חיזויית מבוססת בינה מלאכותית"
+    },
+    "status": {
+        "ai_active": "מערכת בינה מלאכותית פעילה"
+    },
+    "navigation": {
+        "executive": "לוח בקרה מנהלים",
+        "technical": "לוח בקרה טכני",
+        "analytics": "אנליטיקה",
+        "reports": "דוחות"
+    },
+    "upload": {
+        "title": "העלה את הנתונים שלך",
+        "drop_title": "גרור ושחרר את הקבצים שלך כאן",
+        "drop_subtitle": "או לחץ לעיון",
+        "supported": "פורמטים נתמכים:",
+        "browse": "📂 עיין בקבצים",
+        "preview_title": "📋 תצוגה מקדימה של קובץ",
+        "process": "✅ עבד נתונים",
+        "clear": "🗑️ נקה נתונים"
+    },
+    "kpis": {
+        "total_customers": "סך הלקוחות",
+        "churn_rate": "שיעור נטישה",
+        "retention_rate": "שיעור שימור",
+        "avg_monthly_charges": "חיובים חודשיים ממוצעים",
+        "high_risk": "לקוחות בסיכון גבוה",
+        "avg_tenure": "משך ממוצע"
+    },
+    "ml": {
+        "title": "פילוח לקוחות (K-Means)",
+        "num_clusters": "מספר אשכולות:",
+        "run_clustering": "🚀 הפעל אשכול",
+        "cluster_viz": "הדמיה תלת-ממדית של אשכולות",
+        "cluster_profiles": "פרופילי אשכולות"
+    },
+    "correlation": {
+        "title": "מטריצת מתאם",
+        "description": "ניתוח מתאם בין משתנים מרכזיים"
+    },
+    "anomaly": {
+        "title": "זיהוי חריגות",
+        "description": "זיהוי דפוסי התנהגות חריגים",
+        "detected": "חריגות שזוהו"
+    },
+    "export": {
+        "title": "מנהל ייצוא",
+        "csv": "CSV",
+        "csv_desc": "ערכים מופרדים בפסיקים",
+        "excel": "Excel",
+        "excel_desc": "חוברת עבודה רב-גיליונית",
+        "json": "JSON",
+        "json_desc": "JavaScript Object Notation",
+        "pdf": "PDF",
+        "pdf_desc": "דוח בפורמט PDF",
+        "html": "HTML",
+        "html_desc": "דף אינטרנט אינטראקטיבי",
+        "png": "PNG",
+        "png_desc": "צילום מסך של לוח הבקרה",
+        "zip": "ZIP",
+        "zip_desc": "חבילה מלאה"
+    },
+    "insights": {
+        "title": "תובנות בינה מלאכותית"
+    },
+    "reports": {
+        "title": "מרכז יצירת דוחות",
+        "churn_analysis": "ניתוח נטישה",
+        "churn_desc": "דוח מפורט על נטישה",
+        "revenue_analysis": "ניתוח הכנסות",
+        "revenue_desc": "תחזיות ומגמות",
+        "customer_segmentation": "פילוח לקוחות",
+        "segment_desc": "ניתוח מגזרים",
+        "predictive_model": "מודל חיזוי",
+        "predictive_desc": "תחזיות למידת מכונה",
+        "generate_csv": "📄 CSV",
+        "generate_pdf": "📄 PDF",
+        "generate_excel": "📊 Excel"
+    },
+    "table": {
+        "title": "טבלת נתונים חכמה",
+        "search": "חפש לקוחות...",
+        "filter": "סנן לפי מגזר",
+        "all": "כל המגזרים"
+    },
+    "charts": {
+        "churn_distribution": "התפלגות נטישה",
+        "churn_by_contract": "שיעור נטישה לפי סוג חוזה",
+        "revenue_analysis": "מגמת ניתוח הכנסות",
+        "tenure_distribution": "התפלגות משך"
+    },
+    "footer": {
+        "developed_by": "פותח על ידי אליזבת פמיליה",
+        "follow": "עקוב אחרי:"
+    }
+}
