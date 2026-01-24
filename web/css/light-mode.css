@@ -16,7 +16,7 @@ body.light-mode {
     --border-elegant: rgba(148, 163, 184, 0.3);
     
     /* Fondo claro */
-    background: linear-gradient(135deg, #F8FAFC 0%, #E2E8F0 50%, #F1F5F9 85%);
+    background: linear-gradient(135deg, #F8FAFC 0%, #E2E8F0 50%, #F1F5F9 75%);
 }
 
 /* ===== HEADER ===== */
