@@ -9,14 +9,14 @@ body.light-mode {
     --dark-bg: #F8FAFC;
     --darker-bg: #F1F5F9;
     --card-bg: rgba(255, 255, 255, 0.90);
-    --glass-bg: rgba(255, 255, 255, 0.85);
+    --glass-bg: rgba(255, 255, 255, 0.80);
     --text-light: #1E293B;
     --text-accent: #475569;
     --text-muted: #64748B;
     --border-elegant: rgba(148, 163, 184, 0.3);
     
     /* Fondo claro */
-    background: linear-gradient(135deg, #F8FAFC 0%, #E2E8F0 50%, #F1F5F9 100%);
+    background: linear-gradient(135deg, #F8FAFC 0%, #E2E8F0 50%, #F1F5F9 85%);
 }
 
 /* ===== HEADER ===== */
