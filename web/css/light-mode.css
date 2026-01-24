@@ -8,7 +8,7 @@ body.light-mode {
     /* Variables para modo claro */
     --dark-bg: #F8FAFC;
     --darker-bg: #F1F5F9;
-    --card-bg: rgba(255, 255, 255, 0.95);
+    --card-bg: rgba(255, 255, 255, 0.90);
     --glass-bg: rgba(255, 255, 255, 0.85);
     --text-light: #1E293B;
     --text-accent: #475569;
