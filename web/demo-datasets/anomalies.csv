@@ -1,0 +1,6 @@
+CustomerID,Tenure,MonthlyCharges,TotalCharges,AnomalyScore,Reason
+ANOM-001,2,185.50,371.00,0.95,Unusually high charges for low tenure
+ANOM-002,48,15.20,729.60,0.88,Unusually low charges for high tenure
+ANOM-003,1,245.80,245.80,0.92,Extreme monthly charges
+ANOM-004,72,8.50,612.00,0.85,Very low charges sustained over time
+ANOM-005,3,198.40,595.20,0.91,High spending pattern anomaly

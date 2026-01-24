@@ -1,0 +1,9 @@
+Feature1,Feature2,Correlation
+Tenure,Churn,-0.65
+MonthlyCharges,Churn,0.45
+TotalCharges,Churn,-0.38
+Contract,Churn,-0.52
+InternetService,Churn,0.28
+Tenure,MonthlyCharges,0.15
+Tenure,TotalCharges,0.82
+MonthlyCharges,TotalCharges,0.42

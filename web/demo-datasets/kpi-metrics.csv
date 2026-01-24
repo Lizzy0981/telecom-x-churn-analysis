@@ -1,0 +1,7 @@
+Metric,Value,Trend,Change
+TotalCustomers,500,positive,5.2
+ChurnRate,27.0,negative,1.2
+RetentionRate,73.0,positive,2.5
+AvgMonthlyCharges,64.76,positive,3.8
+HighRiskCustomers,45,negative,4.5
+AvgTenure,32.4,positive,6.8

@@ -1,0 +1,6 @@
+Feature,Importance,Impact
+Tenure,0.32,High
+MonthlyCharges,0.28,High
+TotalCharges,0.18,Medium
+ContractType,0.14,Medium
+InternetService,0.08,Low
