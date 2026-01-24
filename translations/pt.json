@@ -1,0 +1,124 @@
+{
+    "app": {
+        "title": "Telecom X - Análise de Churn",
+        "subtitle": "Plataforma de Inteligência Preditiva com IA"
+    },
+    "status": {
+        "ai_active": "Sistema IA Ativo"
+    },
+    "navigation": {
+        "executive": "Painel Executivo",
+        "technical": "Painel Técnico",
+        "analytics": "Análises",
+        "reports": "Relatórios"
+    },
+    "upload": {
+        "title": "Carregar Seus Dados",
+        "drop_title": "Arraste e Solte Seus Arquivos Aqui",
+        "drop_subtitle": "ou clique para navegar",
+        "supported": "Formatos suportados:",
+        "browse": "📂 Procurar Arquivos",
+        "preview_title": "📋 Prévia do Arquivo",
+        "process": "✅ Processar Dados",
+        "clear": "🗑️ Limpar Dados"
+    },
+    "demo": {
+        "title": "Ou Experimente Datasets de Demo:",
+        "subtitle": "Selecione um demo para ver a plataforma em ação",
+        "telecom": "Dataset Telecom",
+        "telecom_desc": "Dados completos de clientes",
+        "churn": "Análise de Churn",
+        "churn_desc": "Taxas de churn por segmento",
+        "revenue": "Tendências de Receita",
+        "revenue_desc": "Dados mensais de receita",
+        "segments": "Segmentos de Clientes",
+        "segments_desc": "Perfis de segmentação",
+        "predictive": "Modelo Preditivo",
+        "predictive_desc": "Importância de características",
+        "anomalies": "Anomalias",
+        "anomalies_desc": "Padrões incomuns",
+        "correlation": "Correlações",
+        "correlation_desc": "Relações entre variáveis",
+        "clustering": "Agrupamento",
+        "clustering_desc": "Resultados K-Means",
+        "kpi": "Métricas KPI",
+        "kpi_desc": "Dados de desempenho chave"
+    },
+    "kpis": {
+        "total_customers": "Total de Clientes",
+        "churn_rate": "Taxa de Churn",
+        "retention_rate": "Taxa de Retenção",
+        "avg_monthly_charges": "Cobranças Mensais Médias",
+        "high_risk": "Clientes de Alto Risco",
+        "avg_tenure": "Permanência Média"
+    },
+    "ml": {
+        "title": "Segmentação de Clientes (K-Means)",
+        "kmeans_title": "Segmentação de Clientes K-Means",
+        "num_clusters": "Número de Clusters:",
+        "run_clustering": "🚀 Executar Clustering",
+        "cluster_viz": "Visualização de Clusters 3D",
+        "cluster_profiles": "Perfis de Clusters"
+    },
+    "correlation": {
+        "title": "Matriz de Correlação",
+        "heatmap": "Mapa de Calor de Correlação Interativo",
+        "description": "Análise de correlação entre variáveis-chave"
+    },
+    "anomaly": {
+        "title": "Detecção de Anomalias",
+        "description": "Identificação de padrões de comportamento incomuns",
+        "detected": "Anomalias Detectadas"
+    },
+    "export": {
+        "title": "Gerenciador de Exportação",
+        "history": "Histórico de Exportação (Últimas 20)",
+        "csv": "CSV",
+        "csv_desc": "Valores separados por vírgula",
+        "excel": "Excel",
+        "excel_desc": "Pasta de trabalho multi-folha",
+        "json": "JSON",
+        "json_desc": "JavaScript Object Notation",
+        "pdf": "PDF",
+        "pdf_desc": "Relatório em formato PDF",
+        "html": "HTML",
+        "html_desc": "Página web interativa",
+        "png": "PNG",
+        "png_desc": "Captura do painel",
+        "zip": "ZIP",
+        "zip_desc": "Pacote completo"
+    },
+    "insights": {
+        "title": "Insights de IA"
+    },
+    "reports": {
+        "title": "Centro de Geração de Relatórios",
+        "executive_title": "Relatório Executivo",
+        "executive_desc": "Insights de alto nível para tomadores de decisão",
+        "technical_title": "Relatório Técnico",
+        "technical_desc": "Análise estatística detalhada e métricas ML",
+        "predictive_title": "Previsão Preditiva",
+        "predictive_desc": "Previsões de churn baseadas em ML",
+        "segmentation_title": "Segmentação de Clientes",
+        "segmentation_desc": "Análise de clustering e perfis de segmentos"
+    },
+    "table": {
+        "title": "Tabela Inteligente de Dados",
+        "search": "Pesquisar clientes...",
+        "filter": "Filtrar por segmento",
+        "all": "Todos os segmentos"
+    },
+    "charts": {
+        "churn_distribution": "Distribuição de Churn",
+        "churn_by_contract": "Taxa de Churn por Tipo de Contrato",
+        "revenue_analysis": "Tendência de Análise de Receita",
+        "tenure_distribution": "Distribuição de Permanência"
+    },
+    "footer": {
+        "title": "Telecom X - Análise de Churn",
+        "description": "Transformando dados em decisões inteligentes",
+        "copyright": "© 2025 Elizabeth Díaz Familia - Desenvolvido com 💜 e muito ☕",
+        "developed_by": "Desenvolvido por Elizabeth Familia",
+        "follow": "Siga-me em:"
+    }
+}

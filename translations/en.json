@@ -1,0 +1,124 @@
+{
+    "app": {
+        "title": "Telecom X - Customer Churn Analysis",
+        "subtitle": "AI-Powered Predictive Intelligence Platform"
+    },
+    "status": {
+        "ai_active": "AI System Active"
+    },
+    "navigation": {
+        "executive": "Executive Dashboard",
+        "technical": "Technical Dashboard",
+        "analytics": "Analytics",
+        "reports": "Reports"
+    },
+    "upload": {
+        "title": "Upload Your Data",
+        "drop_title": "Drag & Drop Your Files Here",
+        "drop_subtitle": "or click to browse",
+        "supported": "Supported formats:",
+        "browse": "📂 Browse Files",
+        "preview_title": "📋 File Preview",
+        "process": "✅ Process Data",
+        "clear": "🗑️ Clear Data"
+    },
+    "demo": {
+        "title": "Or Try Demo Datasets:",
+        "subtitle": "Select a demo to see the platform in action",
+        "telecom": "Telecom Dataset",
+        "telecom_desc": "Complete customer data",
+        "churn": "Churn Analysis",
+        "churn_desc": "Segment churn rates",
+        "revenue": "Revenue Trends",
+        "revenue_desc": "Monthly revenue data",
+        "segments": "Customer Segments",
+        "segments_desc": "Segmentation profiles",
+        "predictive": "Predictive Model",
+        "predictive_desc": "Feature importance",
+        "anomalies": "Anomalies",
+        "anomalies_desc": "Unusual patterns",
+        "correlation": "Correlations",
+        "correlation_desc": "Variable relationships",
+        "clustering": "Clustering",
+        "clustering_desc": "K-Means results",
+        "kpi": "KPI Metrics",
+        "kpi_desc": "Key performance data"
+    },
+    "kpis": {
+        "total_customers": "Total Customers",
+        "churn_rate": "Churn Rate",
+        "retention_rate": "Retention Rate",
+        "avg_monthly_charges": "Avg Monthly Charges",
+        "high_risk": "High Risk Customers",
+        "avg_tenure": "Avg Tenure"
+    },
+    "ml": {
+        "title": "Customer Segmentation (K-Means)",
+        "kmeans_title": "K-Means Customer Segmentation",
+        "num_clusters": "Number of Clusters:",
+        "run_clustering": "🚀 Run Clustering",
+        "cluster_viz": "3D Cluster Visualization",
+        "cluster_profiles": "Cluster Profiles"
+    },
+    "correlation": {
+        "title": "Correlation Matrix",
+        "heatmap": "Interactive Correlation Heatmap",
+        "description": "Correlation analysis between key variables"
+    },
+    "anomaly": {
+        "title": "Anomaly Detection",
+        "description": "Identification of unusual behavior patterns",
+        "detected": "Anomalies Detected"
+    },
+    "export": {
+        "title": "Export Manager",
+        "history": "Export History (Last 20)",
+        "csv": "CSV",
+        "csv_desc": "Comma-separated values",
+        "excel": "Excel",
+        "excel_desc": "Multi-sheet workbook",
+        "json": "JSON",
+        "json_desc": "JavaScript Object Notation",
+        "pdf": "PDF",
+        "pdf_desc": "PDF format report",
+        "html": "HTML",
+        "html_desc": "Interactive web page",
+        "png": "PNG",
+        "png_desc": "Dashboard screenshot",
+        "zip": "ZIP",
+        "zip_desc": "Complete package"
+    },
+    "insights": {
+        "title": "AI Insights"
+    },
+    "reports": {
+        "title": "Reports Generation Center",
+        "executive_title": "Executive Report",
+        "executive_desc": "High-level insights for decision makers",
+        "technical_title": "Technical Report",
+        "technical_desc": "Detailed statistical analysis and ML metrics",
+        "predictive_title": "Predictive Forecast",
+        "predictive_desc": "ML-based churn predictions and trends",
+        "segmentation_title": "Customer Segmentation",
+        "segmentation_desc": "Clustering analysis and segment profiles"
+    },
+    "table": {
+        "title": "Intelligent Data Table",
+        "search": "Search customers...",
+        "filter": "Filter by segment",
+        "all": "All segments"
+    },
+    "charts": {
+        "churn_distribution": "Churn Distribution",
+        "churn_by_contract": "Churn Rate by Contract Type",
+        "revenue_analysis": "Revenue Analysis Trend",
+        "tenure_distribution": "Tenure Distribution"
+    },
+    "footer": {
+        "title": "Telecom X - Customer Churn Analysis",
+        "description": "Transforming data into intelligent decisions",
+        "copyright": "© 2025 Elizabeth Díaz Familia - Developed with 💜 and lots of ☕",
+        "developed_by": "Developed by Elizabeth Familia",
+        "follow": "Follow me on:"
+    }
+}

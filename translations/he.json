@@ -1,0 +1,124 @@
+{
+    "app": {
+        "title": "טלקום X - ניתוח נטישת לקוחות",
+        "subtitle": "פלטפורמת אינטליגנציה חיזויית מבוססת בינה מלאכותית"
+    },
+    "status": {
+        "ai_active": "מערכת בינה מלאכותית פעילה"
+    },
+    "navigation": {
+        "executive": "לוח בקרה מנהלים",
+        "technical": "לוח בקרה טכני",
+        "analytics": "אנליטיקה",
+        "reports": "דוחות"
+    },
+    "upload": {
+        "title": "העלה את הנתונים שלך",
+        "drop_title": "גרור ושחרר את הקבצים שלך כאן",
+        "drop_subtitle": "או לחץ לעיון",
+        "supported": "פורמטים נתמכים:",
+        "browse": "📂 עיין בקבצים",
+        "preview_title": "📋 תצוגה מקדימה של קובץ",
+        "process": "✅ עבד נתונים",
+        "clear": "🗑️ נקה נתונים"
+    },
+    "demo": {
+        "title": "או נסה מערכי נתונים להדגמה:",
+        "subtitle": "בחר הדגמה כדי לראות את הפלטפורמה בפעולה",
+        "telecom": "מערך נתוני טלקום",
+        "telecom_desc": "נתוני לקוחות מלאים",
+        "churn": "ניתוח נטישה",
+        "churn_desc": "שיעורי נטישה לפי מגזר",
+        "revenue": "מגמות הכנסות",
+        "revenue_desc": "נתוני הכנסות חודשיים",
+        "segments": "מגזרי לקוחות",
+        "segments_desc": "פרופילי פילוח",
+        "predictive": "מודל חיזוי",
+        "predictive_desc": "חשיבות תכונות",
+        "anomalies": "חריגות",
+        "anomalies_desc": "דפוסים חריגים",
+        "correlation": "מתאמים",
+        "correlation_desc": "יחסי משתנים",
+        "clustering": "אשכול",
+        "clustering_desc": "תוצאות K-Means",
+        "kpi": "מדדי KPI",
+        "kpi_desc": "נתוני ביצועים מרכזיים"
+    },
+    "kpis": {
+        "total_customers": "סך הלקוחות",
+        "churn_rate": "שיעור נטישה",
+        "retention_rate": "שיעור שימור",
+        "avg_monthly_charges": "חיובים חודשיים ממוצעים",
+        "high_risk": "לקוחות בסיכון גבוה",
+        "avg_tenure": "משך ממוצע"
+    },
+    "ml": {
+        "title": "פילוח לקוחות (K-Means)",
+        "kmeans_title": "פילוח לקוחות K-Means",
+        "num_clusters": "מספר אשכולות:",
+        "run_clustering": "🚀 הפעל אשכול",
+        "cluster_viz": "הדמיה תלת-ממדית של אשכולות",
+        "cluster_profiles": "פרופילי אשכולות"
+    },
+    "correlation": {
+        "title": "מטריצת מתאם",
+        "heatmap": "מפת חום מתאם אינטראקטיבית",
+        "description": "ניתוח מתאם בין משתנים מרכזיים"
+    },
+    "anomaly": {
+        "title": "זיהוי חריגות",
+        "description": "זיהוי דפוסי התנהגות חריגים",
+        "detected": "חריגות שזוהו"
+    },
+    "export": {
+        "title": "מנהל ייצוא",
+        "history": "היסטוריית ייצוא (20 אחרונים)",
+        "csv": "CSV",
+        "csv_desc": "ערכים מופרדים בפסיקים",
+        "excel": "Excel",
+        "excel_desc": "חוברת עבודה רב-גיליונית",
+        "json": "JSON",
+        "json_desc": "JavaScript Object Notation",
+        "pdf": "PDF",
+        "pdf_desc": "דוח בפורמט PDF",
+        "html": "HTML",
+        "html_desc": "דף אינטרנט אינטראקטיבי",
+        "png": "PNG",
+        "png_desc": "צילום מסך של לוח הבקרה",
+        "zip": "ZIP",
+        "zip_desc": "חבילה מלאה"
+    },
+    "insights": {
+        "title": "תובנות בינה מלאכותית"
+    },
+    "reports": {
+        "title": "מרכז יצירת דוחות",
+        "executive_title": "דוח מנהלים",
+        "executive_desc": "תובנות ברמה גבוהה למקבלי החלטות",
+        "technical_title": "דוח טכני",
+        "technical_desc": "ניתוח סטטיסטי מפורט ומדדי ML",
+        "predictive_title": "תחזית חיזוי",
+        "predictive_desc": "תחזיות נטישה מבוססות ML",
+        "segmentation_title": "פילוח לקוחות",
+        "segmentation_desc": "ניתוח אשכולות ופרופילי מגזרים"
+    },
+    "table": {
+        "title": "טבלת נתונים חכמה",
+        "search": "חפש לקוחות...",
+        "filter": "סנן לפי מגזר",
+        "all": "כל המגזרים"
+    },
+    "charts": {
+        "churn_distribution": "התפלגות נטישה",
+        "churn_by_contract": "שיעור נטישה לפי סוג חוזה",
+        "revenue_analysis": "מגמת ניתוח הכנסות",
+        "tenure_distribution": "התפלגות משך"
+    },
+    "footer": {
+        "title": "טלקום X - ניתוח נטישת לקוחות",
+        "description": "הפיכת נתונים להחלטות חכמות",
+        "copyright": "© 2025 אליזבת דיאז פמיליה - פותח עם 💜 והרבה ☕",
+        "developed_by": "פותח על ידי אליזבת פמיליה",
+        "follow": "עקוב אחרי:"
+    }
+}
