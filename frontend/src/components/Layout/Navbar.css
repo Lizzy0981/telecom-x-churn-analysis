@@ -1,0 +1,142 @@
+/* ===================================
+   NAVBAR STYLES
+   Horizontal navigation bar (optional secondary nav)
+   =================================== */
+
+.navbar {
+  background: var(--color-bg-card);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 0 2rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.navbar::-webkit-scrollbar {
+  height: 4px;
+}
+
+.navbar::-webkit-scrollbar-thumb {
+  background: rgba(102, 126, 234, 0.3);
+  border-radius: 2px;
+}
+
+.navbar-list {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-height: 56px;
+}
+
+.navbar-item {
+  flex-shrink: 0;
+}
+
+/* Navbar Links */
+.navbar-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
+  border-radius: 8px;
+  color: var(--color-text-muted);
+  text-decoration: none;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  position: relative;
+}
+
+.navbar-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  transition: width 0.2s ease;
+}
+
+.navbar-link:hover {
+  color: var(--color-text-light);
+  background: rgba(102, 126, 234, 0.1);
+}
+
+.navbar-link:hover::after {
+  width: 80%;
+}
+
+/* Active Link */
+.navbar-link-active {
+  color: var(--color-text-light);
+  background: rgba(102, 126, 234, 0.15);
+}
+
+.navbar-link-active::after {
+  width: 80%;
+}
+
+.navbar-icon {
+  font-size: 1.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-label {
+  font-size: 0.9375rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 0 1.5rem;
+  }
+
+  .navbar-link {
+    padding: 0.5rem 0.875rem;
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 1rem;
+  }
+
+  .navbar-list {
+    gap: 0.25rem;
+    min-height: 48px;
+  }
+
+  .navbar-link {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .navbar-label {
+    display: none;
+  }
+
+  .navbar-icon {
+    font-size: 1.25rem;
+  }
+}
+
+/* Focus States */
+.navbar-link:focus-visible {
+  outline: 2px solid var(--color-primary-purple);
+  outline-offset: 2px;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .navbar-link,
+  .navbar-link::after {
+    transition: none;
+  }
+}

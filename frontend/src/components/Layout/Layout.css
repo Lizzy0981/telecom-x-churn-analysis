@@ -1,0 +1,366 @@
+/* ===================================
+   LAYOUT STYLES
+   Main application layout structure
+   =================================== */
+
+/* Layout Container */
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background: var(--color-bg-dark);
+}
+
+/* Main Content Area */
+.layout-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  margin-left: 280px;
+  transition: margin-left 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .layout-main {
+    margin-left: 0;
+  }
+}
+
+/* Content Area */
+.layout-content {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: var(--color-bg-dark);
+}
+
+.content-container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .content-container {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    padding: 1rem;
+  }
+}
+
+/* Custom Scrollbar for Content */
+.layout-content::-webkit-scrollbar {
+  width: 12px;
+}
+
+.layout-content::-webkit-scrollbar-track {
+  background: var(--color-bg-darker);
+}
+
+.layout-content::-webkit-scrollbar-thumb {
+  background: var(--color-primary-purple);
+  border-radius: 6px;
+  border: 2px solid var(--color-bg-darker);
+}
+
+.layout-content::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-dark-purple);
+}
+
+/* Page Transitions */
+.layout-content {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Loading State */
+.layout-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.layout-loading-spinner {
+  border: 4px solid rgba(102, 126, 234, 0.1);
+  border-top-color: var(--color-primary-purple);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.layout-loading-text {
+  color: var(--color-text-muted);
+  font-size: 0.9375rem;
+}
+
+/* Error State */
+.layout-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.layout-error-icon {
+  font-size: 4rem;
+  filter: grayscale(1);
+}
+
+.layout-error-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text-light);
+  margin: 0;
+}
+
+.layout-error-message {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  max-width: 600px;
+  margin: 0;
+}
+
+.layout-error-button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.layout-error-button:hover {
+  transform: translateY(-2px);
+}
+
+/* Breadcrumbs (Optional) */
+.layout-breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 2rem;
+  height: 48px;
+  background: var(--color-bg-card);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.breadcrumb-separator {
+  color: var(--color-text-dark);
+}
+
+.breadcrumb-link {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.breadcrumb-link:hover {
+  color: var(--color-primary-purple);
+}
+
+.breadcrumb-current {
+  color: var(--color-text-light);
+  font-weight: 500;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1280px) {
+  .layout-main {
+    margin-left: 240px;
+  }
+}
+
+@media (max-width: 768px) {
+  .layout-main {
+    margin-left: 0;
+  }
+
+  .layout-breadcrumbs {
+    padding: 0 1rem;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .layout-main {
+    margin-left: 0;
+  }
+
+  .layout-content {
+    overflow: visible;
+  }
+
+  .content-container {
+    max-width: 100%;
+  }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  .layout {
+    border: 2px solid currentColor;
+  }
+
+  .layout-content {
+    border-top: 2px solid currentColor;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .layout-main,
+  .layout-content,
+  .layout-error-button {
+    transition: none;
+    animation: none;
+  }
+}
+
+/* Focus Management */
+.layout-content:focus {
+  outline: none;
+}
+
+.skip-to-content {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background: var(--color-primary-purple);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  z-index: 9999;
+  transition: top 0.2s ease;
+}
+
+.skip-to-content:focus {
+  top: 0;
+}
+
+/* Content Spacing Utilities */
+.layout-section {
+  margin-bottom: 2rem;
+}
+
+.layout-section:last-child {
+  margin-bottom: 0;
+}
+
+.layout-section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--color-text-light);
+}
+
+.layout-section-description {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Grid Layouts */
+.layout-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.layout-grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.layout-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.layout-grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1024px) {
+  .layout-grid-3,
+  .layout-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .layout-grid-2,
+  .layout-grid-3,
+  .layout-grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Flex Layouts */
+.layout-flex {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.layout-flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.layout-flex-between {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.layout-flex-wrap {
+  flex-wrap: wrap;
+}
+
+/* Sticky Elements */
+.layout-sticky-top {
+  position: sticky;
+  top: 70px;
+  z-index: 10;
+}
+
+/* Backdrop Blur Effect */
+.layout-blur {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
