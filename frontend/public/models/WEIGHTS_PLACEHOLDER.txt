@@ -1,0 +1,10 @@
+⚠️ ARCHIVO weights.bin NO INCLUIDO
+
+Este archivo debe ser generado siguiendo las instrucciones en README.md
+
+Para desarrollo rápido, ejecuta:
+npm run generate-dummy-weights
+
+O consulta el README.md en este directorio.
+
+Tamaño esperado de weights.bin: ~150 KB

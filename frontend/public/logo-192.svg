@@ -1,0 +1,56 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle with Gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f0f0f0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="512" height="512" rx="100" fill="url(#bgGradient)"/>
+  
+  <!-- Outer Ring -->
+  <circle cx="256" cy="256" r="200" stroke="rgba(255,255,255,0.2)" stroke-width="4" fill="none"/>
+  
+  <!-- Inner Decoration -->
+  <circle cx="256" cy="256" r="180" stroke="rgba(255,255,255,0.1)" stroke-width="2" fill="none"/>
+  
+  <!-- T Letter -->
+  <g transform="translate(140, 180)">
+    <!-- Horizontal bar of T -->
+    <rect x="0" y="0" width="100" height="20" rx="10" fill="url(#textGradient)"/>
+    <!-- Vertical bar of T -->
+    <rect x="40" y="10" width="20" height="120" rx="10" fill="url(#textGradient)"/>
+  </g>
+  
+  <!-- X Letter -->
+  <g transform="translate(270, 180)">
+    <!-- First diagonal of X -->
+    <rect x="20" y="0" width="20" height="140" rx="10" fill="url(#textGradient)" 
+          transform="rotate(30 30 70)"/>
+    <!-- Second diagonal of X -->
+    <rect x="60" y="0" width="20" height="140" rx="10" fill="url(#textGradient)" 
+          transform="rotate(-30 70 70)"/>
+  </g>
+  
+  <!-- Bottom Accent Line -->
+  <line x1="156" y1="330" x2="356" y2="330" stroke="rgba(255,255,255,0.5)" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Sustainability Icon (Leaf) -->
+  <g transform="translate(380, 400)">
+    <path d="M 0 20 Q -10 0, 0 -20 Q 10 0, 0 20" fill="#22c55e" opacity="0.8"/>
+    <circle cx="0" cy="0" r="3" fill="#16a34a"/>
+  </g>
+  
+  <!-- AI Icon (Circuit) -->
+  <g transform="translate(130, 400)">
+    <circle cx="0" cy="0" r="4" fill="#4ec5dd" opacity="0.8"/>
+    <circle cx="15" cy="0" r="4" fill="#4ec5dd" opacity="0.8"/>
+    <line x1="4" y1="0" x2="11" y2="0" stroke="#4ec5dd" stroke-width="2" opacity="0.8"/>
+  </g>
+</svg>

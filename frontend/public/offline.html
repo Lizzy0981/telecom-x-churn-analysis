@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#667eea">
+  <title>Offline - Telecom X</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      color: #e4e4e7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .offline-container {
+      max-width: 500px;
+      width: 100%;
+    }
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 2rem;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #a1a1aa;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    .features {
+      background: rgba(102, 126, 234, 0.1);
+      border: 1px solid rgba(102, 126, 234, 0.2);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .features h3 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: #e4e4e7;
+    }
+
+    .features ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .features li {
+      padding: 0.5rem 0;
+      color: #a1a1aa;
+      font-size: 0.95rem;
+    }
+
+    .features li::before {
+      content: "✓ ";
+      color: #22c55e;
+      font-weight: bold;
+      margin-right: 0.5rem;
+    }
+
+    .retry-button {
+      display: inline-block;
+      padding: 0.875rem 2rem;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+    }
+
+    .retry-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+    }
+
+    .retry-button:active {
+      transform: translateY(0);
+    }
+
+    .wifi-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      opacity: 0.5;
+      animation: fadeInOut 2s ease-in-out infinite;
+    }
+
+    @keyframes fadeInOut {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 0.7; }
+    }
+
+    .footer {
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      color: #71717a;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .logo {
+        width: 60px;
+        height: 60px;
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="offline-container">
+    <div class="logo">📡</div>
+    
+    <div class="wifi-icon">📶</div>
+    
+    <h1>Sin Conexión a Internet</h1>
+    
+    <p>
+      Parece que no tienes conexión a internet en este momento. 
+      No te preocupes, Telecom X funciona offline con algunas limitaciones.
+    </p>
+
+    <div class="features">
+      <h3>💚 Disponible sin conexión:</h3>
+      <ul>
+        <li>Ver datos previamente cargados</li>
+        <li>Usar modelos ML en el navegador</li>
+        <li>Navegar por la aplicación</li>
+        <li>Generar reportes locales</li>
+      </ul>
+    </div>
+
+    <div class="features">
+      <h3>⚠️ Requiere conexión:</h3>
+      <ul>
+        <li>Subir nuevos archivos</li>
+        <li>Sincronizar datos con el servidor</li>
+        <li>Actualizar modelos ML</li>
+        <li>Acceder a APIs externas</li>
+      </ul>
+    </div>
+
+    <button class="retry-button" onclick="location.reload()">
+      🔄 Reintentar Conexión
+    </button>
+
+    <div class="footer">
+      <p>
+        Telecom X - Customer Churn Analysis<br>
+        Desarrollado con 💜 y mucho ☕ por Elizabeth Díaz Familia
+      </p>
+    </div>
+  </div>
+
+  <script>
+    // Check for connection and auto-reload
+    window.addEventListener('online', () => {
+      console.log('Connection restored');
+      setTimeout(() => {
+        location.reload();
+      }, 1000);
+    });
+
+    // Display connection status
+    if (navigator.onLine) {
+      console.log('Device is online');
+    } else {
+      console.log('Device is offline');
+    }
+  </script>
+</body>
+</html>
