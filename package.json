@@ -1,0 +1,73 @@
+{
+  "name": "telecom-x-churn-analysis",
+  "version": "0.9.0-beta",
+  "description": "AI-Powered Customer Churn Analysis Platform - Enterprise Solution",
+  "author": "Elizabeth Díaz Familia <lizzyfamilia@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lizzy0981/telecom-x-churn-analysis.git"
+  },
+  "homepage": "https://lizzy0981.github.io/telecom-x-churn-analysis",
+  "bugs": {
+    "url": "https://github.com/Lizzy0981/telecom-x-churn-analysis/issues"
+  },
+  "keywords": [
+    "churn-analysis",
+    "customer-analytics",
+    "machine-learning",
+    "ai",
+    "telecom",
+    "data-science",
+    "business-intelligence",
+    "react",
+    "typescript",
+    "fastapi",
+    "python",
+    "tensorflow",
+    "pytorch",
+    "power-bi",
+    "tableau"
+  ],
+  "private": true,
+  "workspaces": [
+    "frontend"
+  ],
+  "scripts": {
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && pip install -r requirements.txt",
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && uvicorn app.main:app --reload --host 0.0.0.0 --port 8000",
+    "build": "cd frontend && npm run build",
+    "build:frontend": "cd frontend && npm run build",
+    "preview": "cd frontend && npm run preview",
+    "test": "npm run test:frontend && npm run test:backend",
+    "test:frontend": "cd frontend && npm run test",
+    "test:backend": "cd backend && pytest tests/ -v --cov=app",
+    "test:coverage": "npm run test:frontend -- --coverage && npm run test:backend",
+    "lint": "npm run lint:frontend && npm run lint:backend",
+    "lint:frontend": "cd frontend && npm run lint",
+    "lint:backend": "cd backend && flake8 app/ && mypy app/",
+    "format": "npm run format:frontend && npm run format:backend",
+    "format:frontend": "cd frontend && npm run format",
+    "format:backend": "cd backend && black app/ && isort app/",
+    "type-check": "cd frontend && npm run type-check",
+    "clean": "rm -rf frontend/dist frontend/node_modules backend/__pycache__ backend/.pytest_cache backend/htmlcov",
+    "clean:all": "npm run clean && rm -rf node_modules frontend/node_modules backend/venv",
+    "setup:backend": "cd backend && python -m venv venv && source venv/bin/activate && pip install --upgrade pip && pip install -r requirements.txt",
+    "deploy:frontend": "cd frontend && npm run build && vercel --prod",
+    "deploy:backend": "cd backend && railway up",
+    "docker:build": "docker-compose build",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0",
+    "python": ">=3.11.0"
+  }
+}

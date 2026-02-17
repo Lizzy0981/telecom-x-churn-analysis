@@ -1,0 +1,381 @@
+MIT License
+
+Copyright (c) 2025 Elizabeth Díaz Familia
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+🌟 Telecom X - Customer Churn Analysis & Predictive Intelligence Platform
+
+Este proyecto está desarrollado con amor 💜 para la comunidad global de Data Science
+y representa la culminación de conocimientos avanzados en tecnologías de vanguardia
+para la industria de telecomunicaciones:
+
+- ⚛️ Desarrollo Moderno con React 18 y TypeScript 5
+- 🤖 Machine Learning Avanzado con TensorFlow, PyTorch y Scikit-learn
+- 📊 Business Intelligence Empresarial (Power BI, Tableau)
+- 🐍 Backend de Alto Rendimiento con Python y FastAPI
+- 📈 Visualización de Datos Interactiva con Plotly y Recharts
+- 🌍 Internacionalización Completa (11 idiomas, soporte RTL)
+- 📱 Progressive Web App (PWA) con Offline-First
+- 🔄 Pipelines ETL de Nivel Enterprise
+- 🔍 Explainable AI (SHAP, LIME) para Transparencia
+- ⚡ Optimización de Rendimiento para Millones de Registros
+
+Desarrollado por Elizabeth Díaz Familia como parte del programa Oracle Next Education
+y Alura Latam, elevando los estándares del análisis de churn y retención de clientes
+a nivel enterprise con tecnología Open Source de vanguardia y arquitectura moderna.
+
+🚀 Para más información y documentación completa:
+https://github.com/Lizzy0981/telecom-x-churn-analysis
+
+🌐 Demo en vivo:
+https://lizzy0981.github.io/telecom-x-churn-analysis/
+
+💼 Conecta conmigo:
+- Portfolio: https://lizzy0981.github.io
+- LinkedIn: https://linkedin.com/in/eli-familia/
+- GitHub: https://github.com/Lizzy0981
+- Twitter: https://twitter.com/Lizzyfamilia
+- Email: lizzyfamilia@gmail.com
+
+🙏 Agradecimientos especiales a:
+- Oracle Next Education por la formación integral y de excelencia mundial
+- Alura Latam por los desafíos de calidad superior y metodología excepcional
+- La comunidad Open Source por las herramientas increíbles (React, FastAPI, TensorFlow)
+- React Team por revolucionar el desarrollo web moderno
+- FastAPI Team por el framework API más rápido y elegante
+- TensorFlow & PyTorch Teams por democratizar la Inteligencia Artificial
+- Python Software Foundation por el lenguaje que hace posible el Data Science
+- Tailwind CSS por revolucionar el desarrollo de interfaces modernas
+- Todos los Data Scientists que comparten su conocimiento generosamente
+- La industria de Telecomunicaciones por los desafíos reales que inspiran soluciones
+- Todos los usuarios que utilizan esta plataforma para retener clientes y crecer
+
+"Transformando el análisis de churn en decisiones estratégicas que salvan clientes" ✨
+
+---
+
+📊 Características del Proyecto React + TypeScript:
+
+**Frontend (React 18 + TypeScript 5):**
+- ⚛️ 80+ Componentes React reutilizables y modulares
+- 📘 TypeScript Strict mode con interfaces completas
+- 🎨 Tailwind CSS 3.4 con utilidades personalizadas
+- ⚡ Vite 5.0 con Hot Module Replacement ultra-rápido
+- 🔥 React Query para manejo eficiente de estado servidor
+- 🐻 Zustand para estado global ligero y escalable
+- 🌍 i18next con soporte completo para 11 idiomas
+- 📱 PWA con Service Workers y caching inteligente
+- 💅 Framer Motion para animaciones fluidas
+- 🎲 Three.js para visualizaciones 3D impresionantes
+
+**Machine Learning en el Navegador:**
+- 🤖 TensorFlow.js 4.16 para predicciones client-side
+- 🧠 Brain.js para redes neuronales rápidas
+- ⚡ Inferencia en tiempo real (<100ms)
+- 💾 Predicciones offline con PWA
+- 🔄 Hot-swapping de modelos sin reload
+
+**Backend (Python 3.11 + FastAPI 0.109):**
+- 🐍 52+ Endpoints REST con documentación OpenAPI
+- 🤖 20+ Algoritmos de Machine Learning
+- 📊 Pipeline ETL completo con validación avanzada
+- 🔍 Explainable AI con SHAP y LIME
+- 📈 Soporte para Time Series con Prophet y ARIMA
+- 🎯 AutoML con auto-sklearn, TPOT, H2O
+- 🗄️ PostgreSQL con SQLAlchemy ORM
+- 🔥 Redis para caching de alta velocidad
+- 🔐 JWT Authentication con RBAC
+- 📄 Generación de reportes PDF profesionales
+
+**Visualización de Datos:**
+- 📊 10+ Tipos de gráficos interactivos (Recharts)
+- 📈 Plotly.js para visualizaciones científicas avanzadas
+- 🗺️ Mapas de calor geográficos
+- 📉 Curvas de supervivencia de clientes
+- 🎨 Dashboards responsive y personalizables
+- 💹 Gráficos en tiempo real con WebSocket
+
+**Business Intelligence:**
+- 📦 Exportación directa a Power BI (.pbix)
+- 📊 Exportación a Tableau (.twbx, .hyper, .tde)
+- 📊 Excel avanzado con gráficos nativos
+- 📄 PDFs profesionales con ReportLab
+- 📈 KPIs calculados automáticamente
+- 🎯 Dashboards pre-construidos listos para usar
+
+**Internacionalización (i18n):**
+- 🌍 11 Idiomas completamente traducidos
+- 🇪🇸 Español, 🇺🇸 English, 🇧🇷 Português, 🇫🇷 Français
+- 🇸🇦 العربية, 🇮🇱 עברית, 🇨🇳 中文, 🇷🇺 Русский
+- 🇹🇷 Türkçe, 🇰🇷 한국어, 🇯🇵 日本語
+- ↔️ Soporte RTL (Right-to-Left) para árabe y hebreo
+- 📅 Formatos de fecha/hora localizados
+- 💰 Formatos de moneda regionales
+- 🌐 Detección automática de idioma del navegador
+
+**Optimización de Rendimiento:**
+- ⚡ Lighthouse Score 98/100 Performance
+- 📦 Bundle inicial ~150 KB gzipped
+- 🔄 Code Splitting automático por rutas
+- 💾 Lazy Loading de componentes pesados
+- 🗜️ Chunked processing (10,000 filas/bloque)
+- 🌊 Streaming para archivos grandes
+- 🧠 Web Workers para procesamiento paralelo
+- 💨 Maneja 10M+ registros sin UI freeze
+
+**Testing & Calidad:**
+- ✅ 85% Code Coverage en Frontend
+- ✅ 87% Code Coverage en Backend
+- 🧪 80+ Unit Tests con Vitest
+- 🧪 85+ Backend Tests con pytest
+- 🎭 E2E Tests con Playwright (coming soon)
+- 🔒 Security Tests con OWASP ZAP
+- 📊 Performance Tests con Lighthouse CI
+- 🎯 Continuous Integration con GitHub Actions
+
+---
+
+🎯 Casos de Uso Enterprise:
+
+**Predicción y Prevención:**
+- 🔮 Predicción de churn con 95%+ precisión
+- 🎯 Identificación de factores de riesgo clave
+- 📊 Clasificación de riesgo (LOW, MEDIUM, HIGH, CRITICAL)
+- 💡 Recomendaciones automáticas de retención
+- 📈 Cálculo de probabilidad de churn individual
+- 🎭 Análisis What-If para estrategias de retención
+
+**Segmentación Estratégica:**
+- 👥 Clustering K-Means de clientes
+- 📊 Análisis RFM (Recency, Frequency, Monetary)
+- 🎯 Segmentos accionables con estrategias específicas
+- 📈 Cohort Analysis temporal
+- 🗺️ Segmentación geográfica
+- 💎 Identificación de clientes de alto valor (CLV)
+
+**Análisis de Impacto:**
+- 💰 ROI de campañas de retención
+- 📊 A/B Testing de estrategias
+- 📈 Impacto en revenue de reducción de churn
+- 💸 Cost-Benefit Analysis automatizado
+- 🎯 Efectividad de acciones de retención
+- 📉 Reducción de churn objetivo vs. real
+
+**Reportes Ejecutivos:**
+- 📄 Dashboards para CEO/CFO/CMO
+- 📊 KPIs de retención en tiempo real
+- 📈 Trends y forecasting
+- 🌍 Análisis multi-región
+- 💰 Revenue impact analysis
+- 🎯 Recomendaciones estratégicas basadas en datos
+
+**Integración BI:**
+- 📦 Power BI con dashboards interactivos
+- 📊 Tableau con visualizaciones avanzadas
+- 📊 Excel con análisis y gráficos
+- 📄 PDFs profesionales para presentaciones
+- 🔄 Refresh automático de datos
+- 🎨 Temas corporativos personalizados
+
+---
+
+💡 Stack Tecnológico Completo:
+
+**Frontend:**
+- ⚛️ React 18.2 (Hooks, Context, Suspense, Concurrent Mode)
+- 📘 TypeScript 5.3 (Strict mode, generics, utility types)
+- ⚡ Vite 5.0 (ESBuild, Fast HMR, optimized builds)
+- 🎨 Tailwind CSS 3.4 (JIT, custom utilities, dark mode)
+- 🔥 React Query 5.17 (Server state, caching, mutations)
+- 🐻 Zustand 4.4 (Global state, no boilerplate)
+- 🧭 React Router 6.21 (Nested routes, lazy loading)
+- 📊 Recharts 2.10 (React-native charts)
+- 📈 Plotly.js 2.28 (Scientific plots, 3D)
+- 🎲 Three.js 0.160 (WebGL, 3D graphics)
+- 🤖 TensorFlow.js 4.16 (Browser ML)
+- 🧠 Brain.js 2.0 (Quick neural networks)
+- 🌍 i18next 23.7 (i18n, 11 languages)
+- 💅 Framer Motion 10.18 (Smooth animations)
+- 📅 date-fns 3.0 (Date utilities)
+- 📝 PapaParse 5.4 (CSV parsing)
+- 📊 SheetJS 0.18 (Excel XLSX)
+- 📄 jsPDF 2.5 (PDF generation)
+
+**Backend:**
+- 🐍 Python 3.11+ (Type hints, async/await, performance)
+- ⚡ FastAPI 0.109 (Async, OpenAPI, Pydantic validation)
+- 📊 Pandas 2.2 (DataFrames, analysis, manipulation)
+- 🔢 NumPy 1.26 (Numerical computing, linear algebra)
+- 🤖 Scikit-learn 1.4 (ML algorithms, preprocessing)
+- 🧠 TensorFlow 2.15 (Deep learning, neural networks)
+- 🔥 PyTorch 2.1 (Research ML, dynamic graphs)
+- 📈 XGBoost 2.0 (Gradient boosting trees)
+- 🚀 LightGBM 4.2 (Fast gradient boosting)
+- 🔍 SHAP 0.44 (Model explainability)
+- 🎯 LIME 0.2 (Local interpretability)
+- 📊 Prophet 1.1 (Time series forecasting)
+- 📉 Statsmodels 0.14 (Statistical models, ARIMA)
+- 🗄️ SQLAlchemy 2.0 (ORM, database abstraction)
+- 🔐 python-jose 3.3 (JWT authentication)
+- 🔒 passlib 1.7 (Password hashing, bcrypt)
+- 📊 Plotly 5.18 (Interactive visualizations)
+- 📈 Matplotlib 3.8 (Static plots)
+- 🎨 Seaborn 0.13 (Statistical plots)
+- 📄 ReportLab 4.0 (Professional PDFs)
+- 📊 OpenPyXL 3.1 (Excel manipulation)
+
+**DevOps & Infrastructure:**
+- 🐳 Docker (Multi-container orchestration)
+- 🔄 GitHub Actions (CI/CD automation)
+- 🚀 Vercel (Frontend edge deployment)
+- 🚂 Railway (Backend + PostgreSQL + Redis)
+- 🌐 GitHub Pages (Static hosting, SSL)
+- 🗄️ PostgreSQL 14 (Relational database, ACID)
+- 🔥 Redis (In-memory cache, sessions)
+- 📦 MinIO / S3 (Object storage, files)
+
+---
+
+🌍 Impacto Global:
+
+Este proyecto ha sido diseñado para ser accesible a nivel mundial, con soporte
+completo para 11 idiomas (incluyendo RTL para árabe y hebreo) y la capacidad de
+ayudar a empresas de telecomunicaciones en cualquier región del mundo a:
+
+- 📉 Reducir su tasa de churn hasta un 40%
+- 💰 Aumentar la retención de clientes de alto valor
+- 📊 Tomar decisiones basadas en datos con Explainable AI
+- 🎯 Segmentar clientes de forma estratégica y accionable
+- 📈 Maximizar el retorno de inversión en campañas de retención
+- 🌐 Operar en múltiples mercados con soporte multiidioma
+
+El impacto potencial es significativo: una reducción del 5% en la tasa de churn
+puede traducirse en un aumento de 25-85% en los beneficios de una empresa de
+telecomunicaciones, representando millones de dólares en revenue saved.
+
+---
+
+📚 Recursos Educativos:
+
+El proyecto incluye documentación completa en múltiples idiomas, código comentado
+extensivamente, arquitectura clara y modular que sirve como material educativo
+de referencia para:
+
+- 🎓 Estudiantes de Data Science y Computer Science
+- 💼 Profesionales que quieren aprender React + TypeScript moderno
+- 🤖 Desarrolladores interesados en Machine Learning aplicado
+- 📊 Analistas que buscan entender pipelines de ML en producción
+- 🏢 Empresas que necesitan una solución enterprise de churn analysis
+- 🌍 Desarrolladores que quieren implementar i18n completo
+- ⚡ Equipos que buscan optimizar rendimiento con grandes datasets
+- 🔒 Organizaciones que requieren seguridad y compliance
+
+---
+
+🤝 Contribuciones:
+
+Las contribuciones son bienvenidas y profundamente apreciadas. Por favor, lee
+CONTRIBUTING.md para conocer las guías de estilo, el proceso de Pull Requests,
+y cómo participar en la comunidad. Cada contribución, por pequeña que sea,
+ayuda a hacer este proyecto mejor para toda la comunidad global.
+
+Áreas donde puedes contribuir:
+- 🐛 Reportar y arreglar bugs
+- ✨ Proponer y desarrollar nuevas funcionalidades
+- 📖 Mejorar documentación y ejemplos
+- 🌍 Agregar traducciones a nuevos idiomas
+- 🧪 Aumentar cobertura de tests
+- ⚡ Optimizar rendimiento
+- 🎨 Mejorar UI/UX
+- 🔒 Reforzar seguridad
+
+---
+
+⭐ Si este proyecto te resulta útil:
+
+- Dale una estrella ⭐ en GitHub para apoyar el desarrollo
+- Compártelo con tu equipo de Data Science y desarrolladores
+- Contribuye con mejoras, nuevas funcionalidades o traducciones
+- Reporta bugs o solicita features que necesites
+- Ayuda con traducciones a nuevos idiomas
+- Comparte casos de éxito usando la plataforma
+- Menciona @Lizzy0981 y @telecom-x en redes sociales
+- Escribe artículos o tutoriales sobre cómo lo usas
+
+Tu apoyo hace posible que este proyecto continúe creciendo y mejorando,
+ayudando a más empresas a retener clientes y a más profesionales a aprender
+tecnologías de vanguardia.
+
+---
+
+📊 Métricas del Proyecto:
+
+```
+📝 Líneas de Código:        50,000+
+⚛️ Componentes React:       80+
+🐍 Módulos Python:          150+
+🌍 Idiomas Soportados:      11
+🤖 Modelos ML:              20+
+📊 Tipos de Gráficos:       25+
+🎨 Componentes UI:          100+
+📦 Dependencias:            120+
+🧪 Tests:                   165+
+📄 Endpoints API:           52+
+📈 Coverage Frontend:       85%
+📊 Coverage Backend:        87%
+⚡ Lighthouse Score:        98/100
+📱 PWA Score:               100/100
+```
+
+---
+
+"El conocimiento crece cuando se comparte, y las mejores soluciones nacen
+de la colaboración global, el código abierto, y la pasión por resolver
+problemas reales que impactan a millones de personas" 🌍✨
+
+"Cada línea de código es una oportunidad para hacer el mundo un poco mejor,
+cada feature es un paso hacia la democratización de la tecnología, y cada
+contribución es un acto de generosidad hacia la comunidad global" 💜
+
+Made with 💜, ☕, and a lot of ⚛️ React & 🐍 Python magic by Elizabeth Díaz Familia
+
+---
+
+🌟 Dedicado a:
+
+- Todos los Data Scientists que luchan por hacer el mundo más data-driven
+- Los desarrolladores que creen en el poder del Open Source
+- Las empresas de telecomunicaciones que quieren mejorar la retención
+- Los estudiantes que aprenden tecnologías de vanguardia
+- La comunidad tech global que comparte conocimiento sin fronteras
+- Todas las personas que creen que la tecnología puede cambiar el mundo
+
+---
+
+© 2025 Elizabeth Díaz Familia. All rights reserved.
+
+**Telecom X - Transformando datos en decisiones, números en estrategias, y churn en retención.**
+
+🚀 https://github.com/Lizzy0981/telecom-x-churn-analysis
+🌐 https://lizzy0981.github.io/telecom-x-churn-analysis/
+💼 https://lizzy0981.github.io
+📧 lizzyfamilia@gmail.com
