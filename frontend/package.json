@@ -60,7 +60,7 @@
     "zustand": "^4.4.7",
     "date-fns": "^3.0.6",
     "papaparse": "^5.4.1",
-    "sheetjs": "^0.18.5",
+    "xlsx": "^0.18.5",
     "jspdf": "^2.5.1",
     "html2canvas": "^1.4.1",
     "lucide-react": "^0.309.0"
