@@ -7,15 +7,16 @@
 // Data Store
 export { useDataStore } from './dataStore';
 export type { Customer, Dataset } from './dataStore';
-export {
-  selectCustomers,
-  selectFilteredCustomers,
-  selectSelectedCustomers,
-  selectHighRiskCustomers,
-  selectDatasets,
-  selectActiveDataset,
-  selectStatistics
-} from './dataStore';
+// COMMENTED OUT - These selectors don't exist in dataStore.ts
+// export {
+//   selectCustomers,
+//   selectFilteredCustomers,
+//   selectSelectedCustomers,
+//   selectHighRiskCustomers,
+//   selectDatasets,
+//   selectActiveDataset,
+//   selectStatistics
+// } from './dataStore';
 
 // ML Store
 export { useMLStore } from './mlStore';
