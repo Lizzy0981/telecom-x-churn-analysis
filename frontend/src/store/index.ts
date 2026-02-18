@@ -7,16 +7,6 @@
 // Data Store
 export { useDataStore } from './dataStore';
 export type { Customer, Dataset } from './dataStore';
-// COMMENTED OUT - These selectors don't exist in dataStore.ts
-// export {
-//   selectCustomers,
-//   selectFilteredCustomers,
-//   selectSelectedCustomers,
-//   selectHighRiskCustomers,
-//   selectDatasets,
-//   selectActiveDataset,
-//   selectStatistics
-// } from './dataStore';
 
 // ML Store
 export { useMLStore } from './mlStore';
@@ -25,27 +15,10 @@ export type { MLPrediction, ModelInfo } from './mlStore';
 // UI Store
 export { useUIStore } from './uiStore';
 export type { Theme, Language, Timezone, Currency } from './uiStore';
-export {
-  selectTheme,
-  selectLanguage,
-  selectNotifications,
-  selectUnreadCount,
-  selectModals,
-  selectSidebarState
-} from './uiStore';
 
 // Auth Store
 export { useAuthStore } from './authStore';
 export type { User, AuthTokens } from './authStore';
-export {
-  selectUser,
-  selectIsAuthenticated,
-  selectUserRole,
-  selectIsAdmin,
-  selectAuthLoading,
-  selectAuthError,
-  hasPermission
-} from './authStore';
 
 // Store reset utility
 export const resetAllStores = () => {
