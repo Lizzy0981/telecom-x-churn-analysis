@@ -22,7 +22,7 @@ export const PlotlyChart: React.FC<PlotlyChartProps> = ({
     // Dynamic import de Plotly para reducir bundle size
     const loadPlotly = async () => {
       try {
-        const Plotly = await import('plotly.js-dist-min');
+        const Plotly = await import('plotly.js');
         
         if (chartRef.current) {
           const defaultLayout = {
