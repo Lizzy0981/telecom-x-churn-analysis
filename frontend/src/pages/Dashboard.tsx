@@ -125,7 +125,7 @@ export const Dashboard: React.FC = () => {
               <div className="action-priority high">High</div>
               <div className="action-content">
                 <h4>Contact High-Risk Customers</h4>
-                <p>152 customers with >85% churn probability require immediate attention</p>
+                <p>152 customers with {'>'}85% churn probability require immediate attention</p>
               </div>
               <button className="action-btn">Take Action</button>
             </div>
