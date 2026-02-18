@@ -30,7 +30,7 @@ jobs:
       
       - name: 📦 Install dependencies
         working-directory: ./frontend
-        run: npm install --legacy-peer-deps --no-optional
+        run: npm install --legacy-peer-deps --ignore-scripts
       
       - name: 🔨 Build
         working-directory: ./frontend
