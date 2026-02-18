@@ -2,12 +2,12 @@
   "name": "Telecom X - Customer Churn Analysis",
   "short_name": "Telecom X",
   "description": "AI-Powered Customer Churn Predictive Analysis Platform. Sustainable, Professional, Open Source.",
-  "start_url": "/",
+  "start_url": "/telecom-x-churn-analysis/",
   "display": "standalone",
   "background_color": "#1a1a2e",
   "theme_color": "#667eea",
   "orientation": "portrait-primary",
-  "scope": "/",
+  "scope": "/telecom-x-churn-analysis/",
   "lang": "es",
   "dir": "ltr",
   "categories": [
@@ -18,93 +18,26 @@
   ],
   "icons": [
     {
-      "src": "/logo.svg",
+      "src": "/telecom-x-churn-analysis/logo.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any maskable"
     },
     {
-      "src": "/icon-192.png",
+      "src": "/telecom-x-churn-analysis/logo-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/icon-512.png",
+      "src": "/telecom-x-churn-analysis/logo-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
-    },
-    {
-      "src": "/icon-maskable-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "maskable"
-    },
-    {
-      "src": "/icon-maskable-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
-    }
-  ],
-  "screenshots": [
-    {
-      "src": "/screenshots/dashboard.png",
-      "sizes": "1280x720",
-      "type": "image/png",
-      "form_factor": "wide",
-      "label": "Dashboard Overview"
-    },
-    {
-      "src": "/screenshots/mobile.png",
-      "sizes": "750x1334",
-      "type": "image/png",
-      "form_factor": "narrow",
-      "label": "Mobile View"
-    }
-  ],
-  "shortcuts": [
-    {
-      "name": "Dashboard",
-      "short_name": "Dashboard",
-      "description": "View analytics dashboard",
-      "url": "/dashboard",
-      "icons": [
-        {
-          "src": "/icons/dashboard.png",
-          "sizes": "96x96"
-        }
-      ]
-    },
-    {
-      "name": "Upload Data",
-      "short_name": "Upload",
-      "description": "Upload and process data files",
-      "url": "/upload",
-      "icons": [
-        {
-          "src": "/icons/upload.png",
-          "sizes": "96x96"
-        }
-      ]
-    },
-    {
-      "name": "ML Predictions",
-      "short_name": "ML",
-      "description": "View ML predictions",
-      "url": "/ml/prediction",
-      "icons": [
-        {
-          "src": "/icons/ml.png",
-          "sizes": "96x96"
-        }
-      ]
     }
   ],
   "related_applications": [],
   "prefer_related_applications": false,
-  "iarc_rating_id": "",
   "permissions": [
     "storage",
     "notifications"
