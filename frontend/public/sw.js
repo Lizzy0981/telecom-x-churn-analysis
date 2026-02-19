@@ -1,18 +1,24 @@
 // Service Worker for Telecom X PWA
-// Version 0.9.0-beta
+// Version 1.0.0
 
-const CACHE_NAME = 'telecom-x-v0.9.0';
+// FIX-01: Derive base path dynamically from the SW scope.
+// On GitHub Pages → '/telecom-x-churn-analysis/'
+// On Vercel / localhost → '/'
+// This ensures every cached URL resolves correctly regardless of deployment.
+var BASE_PATH = self.registration.scope.replace(self.location.origin, '') || '/';
+
+const CACHE_NAME = 'telecom-x-v1.0.0';
 const RUNTIME_CACHE = 'telecom-x-runtime';
 const MODEL_CACHE = 'telecom-x-models';
 
-// Assets to cache on install
+// FIX-02: Prefix every static URL with BASE_PATH (was absolute '/' — broken on GitHub Pages).
 const STATIC_CACHE_URLS = [
-  '/',
-  '/index.html',
-  '/offline.html',
-  '/manifest.json',
-  '/logo.svg',
-  '/favicon.ico'
+  BASE_PATH,
+  BASE_PATH + 'index.html',
+  BASE_PATH + 'offline.html',
+  BASE_PATH + 'manifest.json',
+  BASE_PATH + 'logo.svg',
+  BASE_PATH + 'favicon.ico'
 ];
 
 // Install event - cache static assets
@@ -22,7 +28,14 @@ self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
       console.log('[Service Worker] Caching static assets');
-      return cache.addAll(STATIC_CACHE_URLS);
+      // FIX-03: Use Promise.allSettled so a missing asset doesn't abort the whole install.
+      return Promise.allSettled(
+        STATIC_CACHE_URLS.map(url =>
+          cache.add(url).catch(err =>
+            console.warn('[Service Worker] Failed to cache (non-fatal):', url, err)
+          )
+        )
+      );
     }).then(() => {
       console.log('[Service Worker] Installed successfully');
       return self.skipWaiting();
@@ -56,10 +69,23 @@ self.addEventListener('activate', (event) => {
 // Fetch event - serve from cache, fallback to network
 self.addEventListener('fetch', (event) => {
   const { request } = event;
-  const url = new URL(request.url);
+
+  // FIX-04: Wrap URL parsing in try/catch to avoid crashes on malformed URLs.
+  let url;
+  try {
+    url = new URL(request.url);
+  } catch (e) {
+    return;
+  }
 
   // Skip non-GET requests
   if (request.method !== 'GET') {
+    return;
+  }
+
+  // FIX-05: Skip cross-origin requests (Google Fonts, CDNs, external APIs).
+  // Without this, the SW intercepts and may break external resources.
+  if (url.origin !== self.location.origin) {
     return;
   }
 
@@ -79,7 +105,8 @@ self.addEventListener('fetch', (event) => {
   if (request.mode === 'navigate') {
     event.respondWith(
       fetch(request).catch(() => {
-        return caches.match('/offline.html');
+        // FIX applied here too: use BASE_PATH for the fallback URL
+        return caches.match(BASE_PATH + 'offline.html');
       })
     );
     return;
@@ -113,7 +140,7 @@ async function cacheFirst(request, cacheName = CACHE_NAME) {
     
     // Return offline page for navigation requests
     if (request.mode === 'navigate') {
-      return caches.match('/offline.html');
+      return caches.match(BASE_PATH + 'offline.html');
     }
     
     throw error;
@@ -166,8 +193,8 @@ self.addEventListener('push', (event) => {
   
   const options = {
     body: event.data ? event.data.text() : 'New update available',
-    icon: '/logo.svg',
-    badge: '/logo.svg',
+    icon: BASE_PATH + 'logo.svg',
+    badge: BASE_PATH + 'logo.svg',
     vibrate: [200, 100, 200],
     data: {
       dateOfArrival: Date.now(),
@@ -177,12 +204,12 @@ self.addEventListener('push', (event) => {
       {
         action: 'explore',
         title: 'View',
-        icon: '/icons/checkmark.png'
+        icon: BASE_PATH + 'icons/checkmark.png'
       },
       {
         action: 'close',
         title: 'Close',
-        icon: '/icons/close.png'
+        icon: BASE_PATH + 'icons/close.png'
       }
     ]
   };
@@ -200,7 +227,7 @@ self.addEventListener('notificationclick', (event) => {
   
   if (event.action === 'explore') {
     event.waitUntil(
-      clients.openWindow('/')
+      clients.openWindow(BASE_PATH)
     );
   }
 });
@@ -222,4 +249,4 @@ self.addEventListener('message', (event) => {
   }
 });
 
-console.log('[Service Worker] Registered successfully - v0.9.0-beta');
+console.log('[Service Worker] Registered successfully - v1.0.0');
