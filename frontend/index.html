@@ -14,15 +14,17 @@
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://lizzy0981.github.io/telecom-x-churn-analysis/" />
+    <meta property="og:url" content="https://telecom-x-pro.com/" />
     <meta property="og:title" content="Telecom X Pro - AI-Powered Churn Prediction" />
     <meta property="og:description" content="Advanced customer churn prediction platform with machine learning and real-time analytics." />
+    <meta property="og:image" content="/og-image.png" />
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://lizzy0981.github.io/telecom-x-churn-analysis/" />
+    <meta property="twitter:url" content="https://telecom-x-pro.com/" />
     <meta property="twitter:title" content="Telecom X Pro - AI-Powered Churn Prediction" />
     <meta property="twitter:description" content="Advanced customer churn prediction platform with machine learning and real-time analytics." />
+    <meta property="twitter:image" content="/twitter-image.png" />
     
     <!-- PWA -->
     <link rel="manifest" href="/manifest.json" />
@@ -41,15 +43,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
     
+    <!-- FIX-01 REMOVED: <link rel="modulepreload" href="/src/main.tsx" />
+         This line pointed to a TypeScript source file that does NOT exist in production.
+         In production Vite compiles main.tsx into /assets/index-[hash].js.
+         The modulepreload caused a 404 error in the browser console on every page load.
+         Vite automatically injects the correct modulepreload tags during build. -->
+
     <!-- Security Headers -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    
+    <!-- No-index for development -->
+    <!-- <meta name="robots" content="noindex, nofollow" /> -->
 
-    <!-- 
-      FIX 1: GitHub Pages SPA Router script.
-      Converts the ?/path redirect from 404.html back to the real URL path.
-      This MUST go in <head> before React loads.
-    -->
+    <!-- FIX-02: GitHub Pages SPA Router restore script.
+         Works together with 404.html. When GitHub Pages serves 404.html for a
+         deep route (e.g. /dashboard), that page stores the path in sessionStorage
+         and redirects to /. This script runs BEFORE React loads and silently
+         restores the original URL so React Router renders the right page.
+         Without this, every direct URL or page refresh on a sub-route shows a real 404. -->
     <script>
       (function() {
         var redirect = sessionStorage.redirect;
@@ -64,7 +76,7 @@
     <!-- Main App Container -->
     <div id="root"></div>
     
-    <!-- Shown only when JS is disabled -->
+    <!-- Loading Screen -->
     <noscript>
       <div style="
         display: flex;
@@ -89,24 +101,22 @@
       </div>
     </noscript>
     
-    <!-- React App Entry Point (Vite processes this during build) -->
+    <!-- React App Entry Point -->
     <script type="module" src="/src/main.tsx"></script>
     
-    <!-- 
-      FIX 2: Service Worker registration using RELATIVE path via document.baseURI.
-      This ensures the correct path is used whether deployed on:
-      - GitHub Pages: /telecom-x-churn-analysis/sw.js
-      - Vercel / localhost: /sw.js
-      Previously this was hardcoded as '/sw.js' which failed on GitHub Pages.
-    -->
+    <!-- Service Worker Registration (PWA) -->
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
-          // Use a relative URL so Vite can rewrite it with the correct base path
+          // FIX-03: Use a relative URL instead of the hardcoded '/sw.js'.
+          // '/sw.js' resolves to the domain root, which on GitHub Pages is
+          // lizzy0981.github.io/sw.js — that file does not exist there.
+          // new URL('./sw.js', window.location.href) correctly resolves to
+          // lizzy0981.github.io/telecom-x-churn-analysis/sw.js in every environment.
           var swUrl = new URL('./sw.js', window.location.href).href;
           navigator.serviceWorker.register(swUrl)
             .then(function(registration) {
-              console.log('SW registered with scope:', registration.scope);
+              console.log('SW registered:', registration);
             })
             .catch(function(error) {
               console.log('SW registration failed:', error);
