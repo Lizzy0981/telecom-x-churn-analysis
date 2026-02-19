@@ -5,18 +5,18 @@
  */
 
 /* ==================== */
-/* TAILWIND DIRECTIVES  */
-/* ==================== */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* ==================== */
 /* IMPORT STYLES        */
 /* ==================== */
 @import './variables.css';
 @import './themes.css';
 @import './globals.css';
+
+/* ==================== */
+/* TAILWIND DIRECTIVES  */
+/* ==================== */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* ==================== */
 /* CUSTOM LAYERS        */
