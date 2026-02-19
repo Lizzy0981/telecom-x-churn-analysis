@@ -5,11 +5,12 @@ import path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // ⭐ NUEVO: Base path para GitHub Pages
   base: '/telecom-x-churn-analysis/',
   
   plugins: [
     react(),
+    // COMMENTED TEMPORARILY - Causing MIME type issues on GitHub Pages
+    /*
     VitePWA({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'logo.svg'],
@@ -22,13 +23,11 @@ export default defineConfig({
         display: 'standalone',
         icons: [
           {
-            // ⭐ ACTUALIZADO: Ruta con base path
             src: '/telecom-x-churn-analysis/logo-192.png',
             sizes: '192x192',
             type: 'image/png'
           },
           {
-            // ⭐ ACTUALIZADO: Ruta con base path
             src: '/telecom-x-churn-analysis/logo-512.png',
             sizes: '512x512',
             type: 'image/png'
@@ -45,13 +44,14 @@ export default defineConfig({
               cacheName: 'api-cache',
               expiration: {
                 maxEntries: 10,
-                maxAgeSeconds: 60 * 60 // 1 hour
+                maxAgeSeconds: 60 * 60
               }
             }
           }
         ]
       }
     })
+    */
   ],
   resolve: {
     alias: {
