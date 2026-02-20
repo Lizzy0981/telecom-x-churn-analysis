@@ -30,14 +30,51 @@ jobs:
       
       - name: 📦 Install dependencies
         working-directory: ./frontend
-        run: npm install --legacy-peer-deps --ignore-scripts
-      
+        # FIX-01: Removed --ignore-scripts flag.
+        # The original command was: npm install --legacy-peer-deps --ignore-scripts
+        #
+        # --ignore-scripts blocks ALL postinstall scripts, including the one from
+        # @vitejs/plugin-react-swc that downloads the SWC native binary.
+        # Without SWC, 'npm run build' fails with "Cannot find module @swc/core".
+        # A failed build means GitHub Pages keeps serving the last successful deploy,
+        # which had public/index.html overwriting dist/index.html → blank page.
+        #
+        # --legacy-peer-deps is kept because brain.js 2.0.0-beta.23 has peer dep conflicts.
+        run: npm install --legacy-peer-deps
+
+      - name: 🧹 Remove public/index.html before build
+        working-directory: ./frontend
+        # FIX-02: Delete frontend/public/index.html if it still exists in the repo.
+        #
+        # Vite build process:
+        #   Step 1 → processes frontend/index.html (root) → generates dist/index.html
+        #             with correct hashed bundle paths: <script src="/assets/index-Abc123.js">
+        #   Step 2 → copies everything in frontend/public/ into dist/
+        #             IF public/index.html exists, it OVERWRITES dist/index.html
+        #             replacing the correct bundle references with: <script src="/src/main.tsx">
+        #             /src/main.tsx does not exist in production → JS never loads → blank page.
+        #
+        # This step ensures it's removed even if it wasn't deleted from the repo yet.
+        run: rm -f public/index.html && echo "✅ public/index.html removed (or was already absent)"
+
       - name: 🔨 Build
         working-directory: ./frontend
         run: npm run build
         env:
+          GITHUB_ACTIONS: true
           VITE_API_BASE_URL: ${{ secrets.API_URL || 'https://telecom-x-api.railway.app' }}
       
+      - name: 🔍 Verify build output
+        working-directory: ./frontend
+        # Sanity check: make sure dist/index.html references compiled bundles, not source files
+        run: |
+          echo "--- dist/index.html script tags ---"
+          grep "script" dist/index.html
+          echo ""
+          echo "--- dist/ contents ---"
+          ls -la dist/
+          ls -la dist/assets/ | head -20
+
       - name: 📤 Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
