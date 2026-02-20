@@ -53,11 +53,25 @@ function App() {
       }}
       onReset={() => {
         // Reset app state
-        window.location.href = '/';
+        window.location.href = import.meta.env.BASE_URL;
       }}
     >
       <Suspense fallback={<LoadingSpinner fullScreen />}>
-        <Router>
+        {/*
+          FIX: Pass basename={import.meta.env.BASE_URL} to BrowserRouter.
+          
+          Vite sets BASE_URL at build time based on the `base` option in vite.config.ts:
+            - GitHub Pages build → BASE_URL = '/telecom-x-churn-analysis/'
+            - Vercel / localhost → BASE_URL = '/'
+          
+          Without this, React Router reads window.location.pathname which on GitHub Pages
+          is '/telecom-x-churn-analysis/dashboard'. It tries to match that against the
+          route '/dashboard' and finds nothing → blank page / 404 on every route.
+          
+          With basename set, React Router strips the prefix automatically and correctly
+          matches '/dashboard', '/overview', etc.
+        */}
+        <Router basename={import.meta.env.BASE_URL}>
           <div className="app">
             <Routes>
               {/* Landing page (no layout) */}
@@ -81,7 +95,7 @@ function App() {
                     <div className="flex flex-col items-center justify-center min-h-screen">
                       <h1 className="text-4xl font-bold mb-4">404</h1>
                       <p className="text-gray-400 mb-8">Page not found</p>
-                      <a href="/" className="btn btn-primary">
+                      <a href={import.meta.env.BASE_URL} className="btn btn-primary">
                         Go Home
                       </a>
                     </div>
